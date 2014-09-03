@@ -56,7 +56,7 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>CustomEmail__c</fullName>
-        <description>holds a custom email for this object</description>
+        <description>The new custom email field 12:26p</description>
         <externalId>false</externalId>
         <label>CustomEmail</label>
         <required>true</required>
