@@ -65,6 +65,18 @@
         <type>Email</type>
         <unique>true</unique>
     </fields>
+    <fields>
+        <fullName>LastName__c</fullName>
+        <description>The user's last name 17:44</description>
+        <externalId>false</externalId>
+        <label>LastName</label>
+        <length>128</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>TestCustom</label>
     <nameField>
         <label>TestCustom Name</label>
