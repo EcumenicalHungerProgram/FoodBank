@@ -7,8 +7,10 @@
       <pathelement location="/Users/cmumford/apache-ant-1.9.4/lib/ant-salesforce.jar"/>
     </classpath>
   </taskdef>
-  <!-- Test out deploy and retrieve verbs for package 'FoodBank' -->
-  <target name="test">
+  <target name="deploy" description="Deploy FoodBank stuff">
+    <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="FoodBank" rollbackOnError="true"/>
+  </target>
+  <target name="test" description="Deploy and retrieve package FoodBank package">
     <!-- Upload the contents of the "FoodBank" package -->
     <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="FoodBank" rollbackOnError="true"/>
     <mkdir dir="retrieveOutput"/>
