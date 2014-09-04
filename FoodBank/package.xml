@@ -8,5 +8,9 @@
         <members>Family__c-Family Layout</members>
         <name>Layout</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
     <version>31.0</version>
 </Package>
