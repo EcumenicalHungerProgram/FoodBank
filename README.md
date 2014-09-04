@@ -6,9 +6,8 @@ A Salesforce application suitable for running a food bank.
 ## Development Environment Setup
 
 1. Install [Apache Ant](http://ant.apache.org/).
-2. Clone this repository into a directory of your choosing.
+2. Install the [Force.com IDE](http://wiki.developerforce.com/page/Force.com_IDE).
 3. Download the [Force.com Migration Tool](https://na3.salesforce.com/dwnld/SfdcAnt/salesforce_ant_31.0.zip).
-4. Install the [Force.com IDE](http://wiki.developerforce.com/page/Force.com_IDE).
 
 ### Create a new Sandbox on Salesforce
 
