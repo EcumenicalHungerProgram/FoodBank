@@ -40,3 +40,7 @@ In your <sandbox dir> create your build.properties file:
     ant deploy
 
 You are now ready to start entering your data.
+
+If you've made a change in Salesforce and you want to bring it down then:
+
+    ant retrieve
