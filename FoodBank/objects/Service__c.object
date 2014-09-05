@@ -123,7 +123,7 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Service_ID__c</fullName>
+        <fullName>ServiceID__c</fullName>
         <externalId>false</externalId>
         <label>Service ID</label>
         <precision>10</precision>
