@@ -3,7 +3,7 @@
     <defaultLandingTab>Family__c</defaultLandingTab>
     <description>The EHP FoodBank application</description>
     <label>FoodBank</label>
-    <logo>SharedDocuments/EHP_Banner.jpg</logo>
+    <logo>SharedDocuments/EHP_Banner.png</logo>
     <tab>Family__c</tab>
     <tab>Person__c</tab>
     <tab>Income__c</tab>
