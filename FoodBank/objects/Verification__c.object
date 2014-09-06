@@ -66,15 +66,16 @@
     </fields>
     <fields>
         <fullName>Family__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
         <label>Family</label>
         <referenceTo>Family__c</referenceTo>
         <relationshipLabel>Verifications</relationshipLabel>
         <relationshipName>Verifications</relationshipName>
-        <required>true</required>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
-        <type>Lookup</type>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
         <fullName>TypeDoc__c</fullName>
@@ -170,5 +171,5 @@
     </nameField>
     <pluralLabel>Verifications</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
