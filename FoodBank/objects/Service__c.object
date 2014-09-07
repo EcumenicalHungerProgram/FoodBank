@@ -55,6 +55,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>Adopted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Adopted</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Appt__c</fullName>
         <externalId>false</externalId>
         <label>Appt</label>
@@ -83,6 +91,15 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>DateOfService__c</fullName>
+        <description>When was the service provided/delivered?</description>
+        <externalId>false</externalId>
+        <label>Date of Service</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>DeliveryDate__c</fullName>
         <externalId>false</externalId>
         <label>Delivery Date</label>
@@ -98,6 +115,32 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DistributionMethod__c</fullName>
+        <externalId>false</externalId>
+        <label>Distribution Method</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mailed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pickup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Family__c</fullName>
