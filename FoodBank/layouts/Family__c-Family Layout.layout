@@ -154,7 +154,7 @@
         <fields>FirstName__c</fields>
         <fields>LastName__c</fields>
         <fields>Relationship__c</fields>
-        <fields>Sex__c</fields>
+        <fields>Gender__c</fields>
         <relatedList>Person__c.Family__c</relatedList>
         <sortField>FirstName__c</sortField>
         <sortOrder>Asc</sortOrder>
