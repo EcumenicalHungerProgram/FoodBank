@@ -208,6 +208,10 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Services</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>BoxType__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>BoxSize__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>DateOfService__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
