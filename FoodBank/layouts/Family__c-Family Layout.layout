@@ -196,7 +196,7 @@
         <fields>Appt__c</fields>
         <fields>DateOfService__c</fields>
         <fields>Adopted__c</fields>
-        <fields>DistributionMethod__c</fields>
+        <fields>Description__c</fields>
         <relatedList>Service__c.Family__c</relatedList>
     </relatedLists>
     <relatedLists>
