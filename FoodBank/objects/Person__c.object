@@ -55,6 +55,20 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>Age__c</fullName>
+        <description>The person&apos;s age</description>
+        <externalId>false</externalId>
+        <formula>YEAR(DATEVALUE(NOW()))-YEAR( DOB__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CRN__c</fullName>
         <externalId>false</externalId>
         <label>CRN</label>
