@@ -22,7 +22,12 @@
     </types>
     <types>
         <members>Family__c-Family Layout</members>
+        <members>Person__c-People Layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Profile</name>
     </types>
     <version>31.0</version>
 </Package>
