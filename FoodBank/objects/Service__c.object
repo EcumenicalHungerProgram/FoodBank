@@ -204,8 +204,9 @@
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Service Name</label>
-        <type>Text</type>
+        <displayFormat>{0}</displayFormat>
+        <label>ID</label>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Services</pluralLabel>
     <searchLayouts>

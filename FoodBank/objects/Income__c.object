@@ -89,6 +89,17 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Self__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( Id, IncomeSource__c &amp; &quot;: $&quot; &amp; TEXT(Amount__c) &amp; &quot; / mo.&quot;, &quot;_self&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Income</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>Income</label>
     <listViews>
         <fullName>All</fullName>
@@ -96,8 +107,9 @@
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Income Name</label>
-        <type>Text</type>
+        <displayFormat>{0}</displayFormat>
+        <label>ID</label>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Incomes</pluralLabel>
     <searchLayouts/>

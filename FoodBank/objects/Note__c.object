@@ -83,8 +83,9 @@
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Note Name</label>
-        <type>Text</type>
+        <displayFormat>Note {0}</displayFormat>
+        <label>ID</label>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Notes</pluralLabel>
     <searchLayouts/>
