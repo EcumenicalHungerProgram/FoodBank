@@ -154,14 +154,17 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>FirstName__c</fields>
-        <fields>LastName__c</fields>
+        <fields>Self__c</fields>
         <fields>Relationship__c</fields>
+        <fields>Age__c</fields>
         <fields>Gender__c</fields>
+        <fields>Guest__c</fields>
         <relatedList>Person__c.Family__c</relatedList>
-        <sortField>FirstName__c</sortField>
-        <sortOrder>Asc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>Self__c</fields>
+        <fields>BestTime__c</fields>
+        <relatedList>Phone__c.Family__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -170,28 +173,6 @@
         <relatedList>Note__c.Family__c</relatedList>
         <sortField>CREATED_DATE</sortField>
         <sortOrder>Desc</sortOrder>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Number__c</fields>
-        <fields>Type__c</fields>
-        <fields>BestTime__c</fields>
-        <relatedList>Phone__c.Family__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>IncomeSource__c</fields>
-        <fields>Amount__c</fields>
-        <relatedList>Income__c.Family__c</relatedList>
-        <sortField>Amount__c</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Amount__c</fields>
-        <fields>Expense__c</fields>
-        <fields>Section8__c</fields>
-        <relatedList>Expense__c.Family__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -204,11 +185,24 @@
         <relatedList>Service__c.Family__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>VerifFor__c</fields>
-        <fields>TypeDoc__c</fields>
+        <fields>Self__c</fields>
+        <relatedList>Income__c.Family__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Self__c</fields>
+        <fields>Section8__c</fields>
+        <relatedList>Expense__c.Family__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Self__c</fields>
         <fields>Comments__c</fields>
+        <fields>CREATED_DATE</fields>
         <relatedList>Verification__c.Family__c</relatedList>
+        <sortField>CREATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
