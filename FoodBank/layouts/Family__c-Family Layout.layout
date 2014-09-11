@@ -27,10 +27,6 @@
                 <behavior>Edit</behavior>
                 <field>State__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>AddressCombined__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
