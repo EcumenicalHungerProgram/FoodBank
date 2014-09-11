@@ -108,9 +108,13 @@
     </fields>
     <label>Phone</label>
     <listViews>
-        <fullName>All</fullName>
+        <fullName>All_Grid</fullName>
+        <columns>Family__c</columns>
+        <columns>Self__c</columns>
+        <columns>Type__c</columns>
+        <columns>BestTime__c</columns>
         <filterScope>Everything</filterScope>
-        <label>All</label>
+        <label>All (Grid)</label>
     </listViews>
     <nameField>
         <displayFormat>{0}</displayFormat>

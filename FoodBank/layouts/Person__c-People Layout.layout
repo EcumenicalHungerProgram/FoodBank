@@ -7,7 +7,7 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Readonly</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
@@ -53,6 +53,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Age__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Self__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
