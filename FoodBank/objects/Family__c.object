@@ -277,6 +277,15 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>NumPeople__c</fullName>
+        <externalId>false</externalId>
+        <label>NumPeople</label>
+        <summaryForeignKey>Person__c.Family__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>ReferredBy__c</fullName>
         <externalId>false</externalId>
         <label>Referred by</label>

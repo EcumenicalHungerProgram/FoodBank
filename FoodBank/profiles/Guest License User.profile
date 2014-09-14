@@ -88,6 +88,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Family__c.NumPeople__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Family__c.ReferredBy__c</field>
         <readable>false</readable>
     </fieldPermissions>
