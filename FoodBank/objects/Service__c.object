@@ -268,11 +268,41 @@
         <fullName>TypeOfMeat__c</fullName>
         <externalId>false</externalId>
         <label>Type of meat</label>
-        <length>40</length>
-        <required>false</required>
+        <picklist>
+            <controllingField>Type__c</controllingField>
+            <picklistValues>
+                <fullName>Turkey</fullName>
+                <controllingFieldValues>Food</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chicken</fullName>
+                <controllingFieldValues>Food</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ham</fullName>
+                <controllingFieldValues>Food</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Turkey/Ham</fullName>
+                <controllingFieldValues>Food</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ham/Chicken</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <controllingFieldValues>Food</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>TypeOfService__c</fullName>
