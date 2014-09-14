@@ -1,0 +1,84 @@
+<apex:page controller="DemographicsController">
+  <apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
+  <h1>Client Demographics</h1>
+  
+  <p>{!start_date} - {!end_date}</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Count</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3" class="tablegroup">Gender</td>
+      </tr>
+      <tr>
+        <td>blank</td>
+        <td class="tdnum">{!num_gender_blank}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      <tr>
+        <td>Female</td>
+        <td class="tdnum">{!num_gender_female}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      <tr>
+        <td>Male</td>
+        <td class="tdnum">{!num_gender_male}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      
+      <tr>
+        <td colspan="3" class="tablegroup">Age</td>
+      </tr>
+      <tr>
+        <td>blank</td>
+        <td class="tdnum">{!num_age_blank}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      <tr>
+        <td>0-17</td>
+        <td class="tdnum">{!num_age_youth}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      <tr>
+        <td>18-64</td>
+        <td class="tdnum">{!num_age_adult}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      <tr>
+        <td>65+</td>
+        <td class="tdnum">{!num_age_elderly}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      
+      <tr>
+        <td>Adults (18+)</td>
+        <td class="tdnum">{!num_age_non_youth}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      <tr>
+        <td>Children (&lt;18)</td>
+        <td class="tdnum">{!num_age_youth}</td>
+        <td class="tdnum">?%</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="tablegroup">Totals</td>
+      </tr>
+      <tr>
+        <td>People</td>
+        <td class="tdnum">{!num_people}</td>
+        <td class="tdnum"></td>
+      </tr>
+      <tr>
+        <td>Households</td>
+        <td class="tdnum">{!num_households}</td>
+        <td class="tdnum"></td>
+      </tr>
+    </tbody>
+  </table>
+</apex:page>
