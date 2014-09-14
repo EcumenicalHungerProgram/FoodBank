@@ -314,6 +314,24 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Food</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Food</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
     <label>Service</label>
     <listViews>
         <fullName>All</fullName>
