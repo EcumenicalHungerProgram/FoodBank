@@ -14,4 +14,6 @@
     <tab>Service__c</tab>
     <tab>TimeSlot__c</tab>
     <tab>standard-report</tab>
+    <tab>Demographics</tab>
+    <tab>DemographicsPlus</tab>
 </CustomApplication>

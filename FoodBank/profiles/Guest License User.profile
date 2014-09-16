@@ -5,6 +5,14 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>DemographicsController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DemographicsPlusController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -337,6 +345,14 @@
     <layoutAssignments>
         <layout>Person__c-People Layout</layout>
     </layoutAssignments>
+    <pageAccesses>
+        <apexPage>Demographics</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>DemographicsPlus</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <userLicense>Guest User License</userLicense>
     <userPermissions>
         <enabled>true</enabled>
