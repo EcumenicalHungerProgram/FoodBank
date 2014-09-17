@@ -27,7 +27,16 @@ public class BirthdayListController {
             family_ids.add(ar.id);
         }
         
-        Person__c[] people_served = [SELECT Gender__c,Age__c,DOB__c,Relationship__c,LastName__c FROM Person__c WHERE Family__r.id in :family_ids];
+        // File home phone's for the families
+        Map<String, String> family_phones = new Map<String, String>();
+        Phone__c[] phones = [SELECT Number__c,Type__c,Family__r.ID FROM Phone__c WHERE Family__r.id in :family_ids];
+        for (Phone__c phone : phones) {
+            if (phone.Type__c != null && phone.Type__c.equals('Home')) {
+                family_phones.put(phone.Family__r.ID, phone.Number__c);
+            }
+        }
+        
+        Person__c[] people_served = [SELECT Gender__c,Age__c,DOB__c,Relationship__c,LastName__c,Family__r.ID FROM Person__c WHERE Family__r.id in :family_ids];
         
         for (Person__c person : people_served) {
             if (person.Age__c >= 4 && person.Age__c <= 14 && person.DOB__c != null && person.DOB__c.month() == birthday_month) {
@@ -37,6 +46,7 @@ public class BirthdayListController {
                 birthday.age = person.Age__c;
                 birthday.gender = person.Gender__c;
                 birthday.relation = person.Relationship__c;
+                birthday.phone = family_phones.get(person.Family__r.ID);
                 birthdays.add(birthday);
             }
         }
