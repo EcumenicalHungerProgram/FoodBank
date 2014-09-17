@@ -1,0 +1,9 @@
+<apex:page >
+  <h1>Reports</h1>
+  <ul>
+      <li><a href="/apex/BirthdayList">Birthday list</a></li>
+      <li><a href="/apex/Demographics">Demographics</a></li>
+      <li><a href="/apex/DemographicsPlus">Demographics+</a></li>
+      <li><a href="/apex/IncomeEthnicity">Food/Ethnicity</a></li>
+  </ul>
+</apex:page>

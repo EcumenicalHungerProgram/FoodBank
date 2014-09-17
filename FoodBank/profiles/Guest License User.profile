@@ -361,6 +361,10 @@
         <apexPage>DemographicsPlus</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>Reports</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <userLicense>Guest User License</userLicense>
     <userPermissions>
         <enabled>true</enabled>

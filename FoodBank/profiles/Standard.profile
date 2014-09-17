@@ -361,14 +361,10 @@
         <apexPage>DemographicsPlus</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
-    <tabVisibilities>
-        <tab>Demographics</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>DemographicsPlus</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
+    <pageAccesses>
+        <apexPage>Reports</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <tabVisibilities>
         <tab>Expense__c</tab>
         <visibility>DefaultOn</visibility>
@@ -391,6 +387,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Phone__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Reports</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
