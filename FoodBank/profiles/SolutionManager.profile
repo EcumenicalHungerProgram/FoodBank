@@ -6,6 +6,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>BirthdayListController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DemographicsController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -345,6 +349,10 @@
     <layoutAssignments>
         <layout>Person__c-People Layout</layout>
     </layoutAssignments>
+    <pageAccesses>
+        <apexPage>BirthdayList</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <pageAccesses>
         <apexPage>Demographics</apexPage>
         <enabled>false</enabled>

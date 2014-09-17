@@ -1,0 +1,43 @@
+<apex:page controller="BirthdayListController" title="Client Demographics" renderAs="{!render_as}" showHeader="{!show_header}">
+  <apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
+  
+  <h1>{!month} Birthdays</h1>
+  <apex:form rendered="{!show_header}">
+      <apex:commandLink value="Printable View" action="{!makePrintable}">
+          <apex:param name="render_as" value="pdf" assignTo="{!render_as}"/>
+          <apex:param name="show_header" value="false" assignTo="{!show_header}"/>
+      </apex:commandLink>
+  </apex:form>
+
+  <apex:form >
+      <p>for children (age 4-15) of families receiving services during period {!service_start_date} - {!service_end_date}</p>
+        <apex:pageBlock id="all"  title="Birthdays" >
+            <apex:pageBlockTable value="{!birthdays}" var="c">
+                <apex:column value="{!c.name}">
+                    <apex:facet name="header">Name</apex:facet>
+                </apex:column>
+                <apex:column value="{!c.dob}">
+                    <apex:facet name="header">DOB</apex:facet>
+                </apex:column>
+                <apex:column value="{!c.age}">
+                    <apex:facet name="header">Age</apex:facet>
+                </apex:column>
+                <apex:column value="{!c.gender}">
+                    <apex:facet name="header">Gender</apex:facet>
+                </apex:column>
+                <apex:column value="{!c.file_no}">
+                    <apex:facet name="header">File #</apex:facet>
+                </apex:column>
+                <apex:column value="{!c.relation}">
+                    <apex:facet name="header">Relation</apex:facet>
+                </apex:column>
+                <apex:column value="{!c.last_service}">
+                    <apex:facet name="header">Last Service</apex:facet>
+                </apex:column>
+                <apex:column value="{!c.phone}" >
+                    <apex:facet name="header">Home Phone</apex:facet>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
