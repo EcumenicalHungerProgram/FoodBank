@@ -10,14 +10,23 @@
   </apex:form>
 
   <apex:form >
-      <p>for children (age 4-15) of families receiving services during period {!service_start_date} - {!service_end_date}</p>
+      <p>For children (age 4-15) of families receiving services during period 
+      &nbsp;<apex:outputText value="{0,date,M'/'d'/'yyyy}">
+        <apex:param value="{!service_start_date}"/>
+      </apex:outputText>&nbsp;-&nbsp;<apex:outputText value="{0,date,M'/'d'/'yyyy}">
+        <apex:param value="{!service_end_date}" /> 
+      </apex:outputText>
+      </p>
         <apex:pageBlock id="all"  title="Birthdays" >
             <apex:pageBlockTable value="{!birthdays}" var="c">
                 <apex:column value="{!c.name}">
                     <apex:facet name="header">Name</apex:facet>
                 </apex:column>
-                <apex:column value="{!c.dob}">
+                <apex:column >
                     <apex:facet name="header">DOB</apex:facet>
+                    <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                        <apex:param value="{!c.dob}" /> 
+                    </apex:outputText>
                 </apex:column>
                 <apex:column value="{!c.age}">
                     <apex:facet name="header">Age</apex:facet>
