@@ -1,4 +1,4 @@
-<apex:page controller="DemographicsPlusController" title="Client Demographics">
+<apex:page controller="DemographicsPlusController" title="Client Demographics" renderAs="{!render_as}" showHeader="{!show_header}">
   <apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
   
   <!-- Need this variables for totals generation -->
@@ -12,12 +12,17 @@
   <apex:variable value="{!0}" var="total8"/>
 
   <h1>Client Demographics</h1>
-
-  <p>{!start_date} - {!end_date}</p>
-  
-  <p># Households: {!num_households}</p>
+  <apex:form rendered="{!show_header}">
+      <apex:commandLink value="Printable View" action="{!makePrintable}">
+          <apex:param name="render_as" value="pdf" assignTo="{!render_as}"/>
+          <apex:param name="show_header" value="false" assignTo="{!show_header}"/>
+      </apex:commandLink>
+  </apex:form>
 
   <apex:form >
+      <p>{!start_date} - {!end_date}</p>
+      <p># Households: {!num_households}</p>
+
         <apex:pageBlock id="all"  title="All People" >
             <apex:pageBlockTable value="{!stats_all}" var="c">
                 <apex:column width="40%">
@@ -51,7 +56,7 @@
             </apex:pageBlockTable>
         </apex:pageBlock>
         
-        <apex:pageBlock id="children" title="Children by Age Range" >
+        <apex:pageBlock id="children" title="Children by Age Range">
             <apex:pageBlockTable value="{!stats_children}" var="c">
                 <apex:column width="40%">
                     {!c.title}
