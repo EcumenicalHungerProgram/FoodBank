@@ -78,6 +78,18 @@
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
+        <fullName>Note__c</fullName>
+        <description>A short note about this phone number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this a friend&apos;s number, work, shelter, etc.? If so make a note here.</inlineHelpText>
+        <label>Note</label>
+        <length>32</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Number__c</fullName>
         <externalId>false</externalId>
         <label>Number</label>
@@ -88,7 +100,7 @@
     <fields>
         <fullName>Self__c</fullName>
         <externalId>false</externalId>
-        <formula>HYPERLINK( Id, Type__c &amp; &quot;: &quot; &amp; Number__c, &quot;_self&quot;)</formula>
+        <formula>HYPERLINK( Id, TEXT(Type__c) &amp; &quot;: &quot; &amp; Number__c, &quot;_self&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Number</label>
         <required>false</required>
@@ -100,11 +112,35 @@
         <fullName>Type__c</fullName>
         <externalId>false</externalId>
         <label>Type</label>
-        <length>50</length>
-        <required>false</required>
+        <picklist>
+            <picklistValues>
+                <fullName>Cell</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Home</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Message</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Work</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Picklist</type>
     </fields>
     <label>Phone</label>
     <listViews>
@@ -113,6 +149,7 @@
         <columns>Self__c</columns>
         <columns>Type__c</columns>
         <columns>BestTime__c</columns>
+        <columns>Note__c</columns>
         <filterScope>Everything</filterScope>
         <label>All (Grid)</label>
     </listViews>

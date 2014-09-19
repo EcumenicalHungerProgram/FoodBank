@@ -230,6 +230,8 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Phone__c.Note__c</field>
+        <readable>false</readable>
         <field>Phone__c.Self__c</field>
         <readable>false</readable>
     </fieldPermissions>
