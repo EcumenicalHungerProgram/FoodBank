@@ -292,6 +292,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Service__c.TimeSlot__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Service__c.TypeOfMeat__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -307,7 +312,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>TimeSlot__c.Date__c</field>
+        <field>TimeSlot__c.Allocated__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -322,7 +327,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>TimeSlot__c.TimeText__c</field>
+        <field>TimeSlot__c.Self__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TimeSlot__c.Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

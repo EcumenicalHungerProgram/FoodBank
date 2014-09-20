@@ -265,6 +265,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>TimeSlot__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This value is automatically set. If the appt. is set for the same time as a timeslot then this value will refer to the appropriate timeslot, else it will be null.</description>
+        <externalId>false</externalId>
+        <label>TimeSlot</label>
+        <referenceTo>TimeSlot__c</referenceTo>
+        <relationshipLabel>Services</relationshipLabel>
+        <relationshipName>Services</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>TypeOfMeat__c</fullName>
         <externalId>false</externalId>
         <label>Type of meat</label>
