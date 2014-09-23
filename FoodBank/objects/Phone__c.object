@@ -100,7 +100,7 @@
     <fields>
         <fullName>Self__c</fullName>
         <externalId>false</externalId>
-        <formula>HYPERLINK( Id, TEXT(Type__c) &amp; &quot;: &quot; &amp; Number__c, &quot;_self&quot;)</formula>
+        <formula>HYPERLINK( &quot;/&quot; &amp; Id, TEXT(Type__c) &amp; &quot;: &quot; &amp; Number__c, &quot;_self&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Number</label>
         <required>false</required>
