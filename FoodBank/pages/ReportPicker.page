@@ -1,0 +1,15 @@
+<apex:page controller="ReportPickerController" docType="html-5.0">
+  <apex:form >
+    <apex:pageBlock title="Report Picker">
+      <apex:pageBlockSection columns="1">
+        <apex:inputField value="{!report_params.StartDate__c}" required="True"/>
+        <apex:inputField value="{!report_params.EndDate__c}" required="True"/>
+        <apex:inputField value="{!report_params.ReportType__c}" required="True"/>
+        <apex:pageBlockSectionItem >
+          <apex:outputLabel value=" " />
+          <apex:commandButton action="{!getReport}" value="Get Report"/>
+        </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>
