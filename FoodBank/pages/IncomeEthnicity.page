@@ -1,0 +1,56 @@
+<apex:page controller="IncomeEthnicityController" renderAs="{!render_as}" showHeader="{!show_header}">
+<apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
+
+<apex:form rendered="{!show_header}">
+  <apex:commandLink value="Printable View" action="{!makePrintable}">
+    <apex:param name="render_as" value="pdf" assignTo="{!render_as}"/>
+    <apex:param name="show_header" value="false" assignTo="{!show_header}"/>
+  </apex:commandLink>
+</apex:form>
+
+<apex:form >
+  <h1 style="text-align:center"> Household/People Served from {!start_date} to {!end_date} </h1>
+</apex:form>
+
+<h2>Number of households</h2> <br/>
+{!num_households} <br/>
+
+<h2> Number of people </h2> <br/>
+Total adults in Households - {!num_adults} <br/>
+Total children in Households - {!num_children} <br/>
+Total People in Households - {!num_people} <br/>
+
+<apex:pageBlock id="all" title="Service Counts" >
+  <apex:pageBlockTable value="{!service_counts_out}" var="sci" rules="all" border="1">
+    <apex:column width="20%">
+      {!sci.one_service}
+      <apex:facet name="header">Served Once</apex:facet>
+    </apex:column>
+    <apex:column width="20%">
+      {!sci.two_service}
+      <apex:facet name="header">Served Twice</apex:facet>
+    </apex:column>
+      <apex:column width="20%">
+      {!sci.three_service}
+      <apex:facet name="header">Served Three Times</apex:facet>
+    </apex:column>
+    <apex:column width="20%">
+      {!sci.four_service}
+      <apex:facet name="header">Served Four Times</apex:facet>
+    </apex:column>
+    <apex:column width="20%">
+      {!sci.more_service}
+      <apex:facet name="header">More than Four Times</apex:facet>
+    </apex:column>
+  </apex:pageBlockTable>
+</apex:pageBlock>
+
+<apex:pageBlock title="Ethnic / Income Breakdown of Households Served">
+  <apex:pageBlockTable value="{!income_ethnicity_out}" var="i" rules="all" border="1">
+    <apex:repeat value="{!i}" var="val">
+       <apex:column value="{!val}" />
+    </apex:repeat>
+  </apex:pageBlockTable>
+</apex:pageBlock>
+
+</apex:page>
