@@ -55,13 +55,13 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Allocated__c</fullName>
+        <description>The number of slots already allocated (scheduled) for various services.</description>
         <externalId>false</externalId>
-        <formula>77</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is automatically calculated.</inlineHelpText>
         <label>Allocated</label>
-        <precision>18</precision>
+        <precision>3</precision>
         <required>false</required>
-        <scale>2</scale>
+        <scale>0</scale>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -110,11 +110,24 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Free__c</fullName>
+        <externalId>false</externalId>
+        <formula>NumSlots__c - Allocated__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Free</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>NumSlots__c</fullName>
         <defaultValue>20</defaultValue>
         <description>The number of allocated slots in this time period. This is not the number of used or available slots, and does not change when services are scheduled in this time slot.</description>
         <externalId>false</externalId>
-        <label>NumSlots</label>
+        <label>Number of Slots</label>
         <precision>3</precision>
         <required>true</required>
         <scale>0</scale>
@@ -139,17 +152,6 @@
         </picklist>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Self__c</fullName>
-        <externalId>false</externalId>
-        <formula>HYPERLINK(&quot;/&quot; &amp; Id, TEXT(DateTime__c) &amp; &apos; &apos; &amp; TEXT(Type__c) &amp; &apos; &apos; &amp; TEXT(FamilySize__c), &apos;_self&apos;)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Label</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Type__c</fullName>
@@ -180,11 +182,21 @@
         <label>All</label>
     </listViews>
     <nameField>
-        <displayFormat>{0}</displayFormat>
-        <label>ID</label>
-        <type>AutoNumber</type>
+        <label>Name</label>
+        <type>Text</type>
     </nameField>
     <pluralLabel>TimeSlots</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <customTabListAdditionalFields xsi:nil="true"/>
+        <lookupDialogsAdditionalFields xsi:nil="true"/>
+        <lookupDialogsAdditionalFields>NumSlots__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Allocated__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Free__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Season__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields xsi:nil="true"/>
+        <searchFilterFields xsi:nil="true"/>
+        <searchResultsAdditionalFields xsi:nil="true"/>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

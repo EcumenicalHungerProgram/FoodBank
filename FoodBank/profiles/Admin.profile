@@ -17,6 +17,10 @@
         <apexClass>DemographicsPlusController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>TimeSlotHelper</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -324,13 +328,13 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>TimeSlot__c.Season__c</field>
+        <editable>false</editable>
+        <field>TimeSlot__c.Free__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>TimeSlot__c.Self__c</field>
+        <editable>true</editable>
+        <field>TimeSlot__c.Season__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
