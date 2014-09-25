@@ -13,6 +13,5 @@
     <tab>Expense__c</tab>
     <tab>Service__c</tab>
     <tab>TimeSlot__c</tab>
-    <tab>standard-report</tab>
     <tab>Reports</tab>
 </CustomApplication>
