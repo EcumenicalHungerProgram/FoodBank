@@ -63,14 +63,6 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Appt__c</fullName>
-        <externalId>false</externalId>
-        <label>Appt</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
         <fullName>BoxSize__c</fullName>
         <externalId>false</externalId>
         <label>Box Size</label>

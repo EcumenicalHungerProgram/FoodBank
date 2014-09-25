@@ -178,7 +178,6 @@
         <fields>NAME</fields>
         <fields>BoxType__c</fields>
         <fields>BoxSize__c</fields>
-        <fields>Appt__c</fields>
         <fields>DateOfService__c</fields>
         <fields>Adopted__c</fields>
         <fields>Description__c</fields>
