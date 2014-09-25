@@ -350,6 +350,10 @@
     </nameField>
     <pluralLabel>Services</pluralLabel>
     <searchLayouts>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>BoxSize__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>BoxType__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Family__c</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>BoxType__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>BoxSize__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>DateOfService__c</lookupDialogsAdditionalFields>

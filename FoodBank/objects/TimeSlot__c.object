@@ -187,16 +187,11 @@
     </nameField>
     <pluralLabel>TimeSlots</pluralLabel>
     <searchLayouts>
-        <customTabListAdditionalFields xsi:nil="true"/>
-        <lookupDialogsAdditionalFields xsi:nil="true"/>
         <lookupDialogsAdditionalFields>NumSlots__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Allocated__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Free__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Season__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields xsi:nil="true"/>
-        <searchFilterFields xsi:nil="true"/>
-        <searchResultsAdditionalFields xsi:nil="true"/>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

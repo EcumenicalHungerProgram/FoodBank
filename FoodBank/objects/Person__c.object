@@ -213,17 +213,6 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>Self__c</fullName>
-        <externalId>false</externalId>
-        <formula>HYPERLINK(Id, LastName__c &amp; &quot;, &quot; &amp; FirstName__c, &quot;_self&quot;)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Name</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <label>Person</label>
     <listViews>
         <fullName>All</fullName>
@@ -231,9 +220,8 @@
         <label>All</label>
     </listViews>
     <nameField>
-        <displayFormat>{0}</displayFormat>
-        <label>ID</label>
-        <type>AutoNumber</type>
+        <label>Name</label>
+        <type>Text</type>
     </nameField>
     <pluralLabel>People</pluralLabel>
     <searchLayouts/>
