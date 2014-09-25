@@ -1,0 +1,83 @@
+<apex:page showHeader="false">
+<style>
+.coupon-container {
+  border: 1px solid;
+  border-radius: 20px;
+  width:500px;
+}
+
+.coupon-title {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.appointment-time {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.coupon-instructions {
+  clear:both;
+  text-align: center;
+}
+
+.ehp-address {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.client-box-container {
+  margin-bottom: 10px;
+}
+
+.client-info {
+ width:60%;
+ float:left;
+}
+
+.box-info {
+ width:40%;
+ float:right;
+}
+
+
+</style>
+
+<div class="coupon-container">
+  <div class="coupon-title">
+    <b> EHP Holiday Pickup Coupon </b>
+  </div>
+
+  <div class="appointment-time">
+    Appointment: 10:00 AM Sep 24, 2014
+  </div>
+
+  <div class="ehp-address">
+    Ecumenical Hunger Program <br/>
+    2411 Pulgas Ave., E. Palo Alto <br/>
+    <i> Do not open items on grounds. </i> <br/>
+  </div>
+
+  <div class="client-box-container">
+    <div class="client-info">
+      <b>
+      [Arroyo] Pedro Arroyo <br/>
+      2369 Clarke Ave. E. Palo Alot, CA 94043
+      </b>
+    </div>
+    <div class="box-info">
+     <b> Box Size: </b> L <br/>
+     Client ID: 6056
+    </div>
+  </div>
+
+  <div style="clear:both">&nbsp;</div>
+
+  <div class="coupon-instructions">
+    Bring this coupon and a valid ID.
+  </div>
+</div>
+</apex:page>
