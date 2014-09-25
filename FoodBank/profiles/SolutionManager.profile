@@ -18,6 +18,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>IncomeEthnicityController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ReportPickerController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TimeSlotHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -244,12 +252,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Service__c.Adopted__c</field>
+        <field>ReportParams__c.ReportType__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Service__c.Appt__c</field>
+        <field>Service__c.Adopted__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -373,6 +381,18 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>DemographicsPlus</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>FoodCoupon</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>IncomeEthnicity</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ReportPicker</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
