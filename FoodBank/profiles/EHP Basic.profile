@@ -32,6 +32,11 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Expense__c.Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Expense__c.Purpose__c</field>
         <readable>true</readable>
     </fieldPermissions>
