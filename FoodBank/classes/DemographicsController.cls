@@ -30,9 +30,9 @@ public class DemographicsController {
         for (Person__c person : people_served) {
             if (String.isEmpty(person.Gender__c))
                 num_gender_blank++;
-            else if (person.Gender__c.equals('M'))
+            else if (person.Gender__c.equals('Male'))
                 num_gender_male++;
-            else if (person.Gender__c.equals('F'))
+            else if (person.Gender__c.equals('Female'))
                 num_gender_female++;
             
             if (person.Age__c == null)

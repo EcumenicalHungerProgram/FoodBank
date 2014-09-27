@@ -50,9 +50,9 @@ public class DemographicsPlusController {
             if (age >= info.min_age && age <= info.max_age) {
                 if (person.Gender__c == null)
                     info.unknown++;
-                else if (person.Gender__c.equals('M'))
+                else if (person.Gender__c.equals('Male'))
                     info.male++;
-                else if (person.Gender__c.equals('F'))
+                else if (person.Gender__c.equals('Female'))
                     info.female++;
                 else
                     info.unknown++;
