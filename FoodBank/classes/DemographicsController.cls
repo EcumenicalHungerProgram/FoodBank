@@ -62,9 +62,9 @@ public class DemographicsController {
         num_households = 0;
         num_people = 0;
         
-        end_date = Date.today();
-        start_date = end_date;
-        start_date = start_date.addYears(-1);
+        Map<String, String> params = ApexPages.currentPage().getParameters();
+        end_date = params.containsKey('end_date') ? Date.parse(params.get('end_date')) : Date.today();
+        start_date = params.containsKey('start_date') ? Date.parse(params.get('start_date')) : end_date.addYears(-1);
         
         getReportData();
     }
