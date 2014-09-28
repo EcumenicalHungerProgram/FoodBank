@@ -287,11 +287,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Service__c.DeliveryDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Service__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
