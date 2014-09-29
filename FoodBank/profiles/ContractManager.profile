@@ -22,6 +22,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>MissedAppointmentsController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ReportPickerController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -394,6 +398,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>IncomeEthnicity</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>MissedAppointments</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
