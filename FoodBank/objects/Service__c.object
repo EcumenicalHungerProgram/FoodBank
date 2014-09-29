@@ -173,7 +173,7 @@
         <fullName>DateOfService__c</fullName>
         <description>When was the service provided/delivered?</description>
         <externalId>false</externalId>
-        <label>Date of Service</label>
+        <label>Date Received</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Date</type>
