@@ -33,8 +33,15 @@
         <name>Document</name>
     </types>
     <types>
+        <members>Expense__c-Expense Layout</members>
         <members>Family__c-Family Layout</members>
+        <members>Income__c-Income Layout</members>
+        <members>Note__c-Note Layout</members>
         <members>Person__c-People Layout</members>
+        <members>Phone__c-Phone Layout</members>
+        <members>Service__c-Service Layout</members>
+        <members>TimeSlot__c-TimeSlot Layout</members>
+        <members>FoodBanks/Verification__c-Verification Layout</members>
         <name>Layout</name>
     </types>
     <types>
