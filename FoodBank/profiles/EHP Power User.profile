@@ -30,6 +30,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ServiceHistoryController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TimeSlotHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -410,6 +414,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>Reports</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ServiceHistory</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <tabVisibilities>
