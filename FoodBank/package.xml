@@ -39,6 +39,7 @@
         <members>Note__c-Note Layout</members>
         <members>Person__c-People Layout</members>
         <members>Phone__c-Phone Layout</members>
+        <members>ReportParams__c-ReportDate Layout</members>
         <members>Service__c-Service Layout</members>
         <members>TimeSlot__c-TimeSlot Layout</members>
         <members>Verification__c-Verification Layout</members>
