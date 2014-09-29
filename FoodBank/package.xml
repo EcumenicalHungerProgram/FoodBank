@@ -41,7 +41,7 @@
         <members>Phone__c-Phone Layout</members>
         <members>Service__c-Service Layout</members>
         <members>TimeSlot__c-TimeSlot Layout</members>
-        <members>FoodBanks/Verification__c-Verification Layout</members>
+        <members>Verification__c-Verification Layout</members>
         <name>Layout</name>
     </types>
     <types>
