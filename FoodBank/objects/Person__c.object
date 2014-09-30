@@ -139,6 +139,17 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is this person disabled?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Does this person have a disability?</inlineHelpText>
+        <label>Disabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Family__c</fullName>
         <externalId>false</externalId>
         <label>Family</label>
