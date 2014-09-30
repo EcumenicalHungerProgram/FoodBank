@@ -203,6 +203,18 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>IDVerificationComment__c</fullName>
+        <description>Notes (if any) pertinent to the ID verification</description>
+        <externalId>false</externalId>
+        <label>ID Verification Comment</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ID_Verif_DocType__c</fullName>
         <description>The type of document used to verify the person&apos;s identification.</description>
         <externalId>false</externalId>

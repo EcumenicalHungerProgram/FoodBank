@@ -240,6 +240,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Person__c.IDVerificationComment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Person__c.ID_Verif_DocType__c</field>
         <readable>true</readable>
     </fieldPermissions>
