@@ -130,6 +130,22 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
         <label>Ethnicity</label>
         <picklist>
             <picklistValues>
+                <fullName>African</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>African Amer.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Asian</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bi-Racial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Caucasian</fullName>
                 <default>false</default>
             </picklistValues>
@@ -142,19 +158,7 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>African Amer.</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
                 <fullName>Nicaraguan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Asian</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pacific Islander</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -162,19 +166,11 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Pacific Islander</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Panamanian</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bi-Racial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Willie Sykes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>African</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
