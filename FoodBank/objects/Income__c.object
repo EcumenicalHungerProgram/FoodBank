@@ -221,6 +221,18 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>ReceivedOn__c</fullName>
+        <description>When is the income received</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When is the payment/benefit received?</inlineHelpText>
+        <label>Received on</label>
+        <length>48</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Self__c</fullName>
         <externalId>false</externalId>
         <formula>HYPERLINK( Id, TEXT(IncomeSource__c) &amp; &quot;: $&quot; &amp; TEXT(Amount__c) &amp; &quot; / mo.&quot;, &quot;_self&quot;)</formula>

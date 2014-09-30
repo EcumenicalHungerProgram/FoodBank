@@ -155,6 +155,14 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Note__c</fields>
+        <fields>CREATED_DATE</fields>
+        <relatedList>Note__c.Family__c</relatedList>
+        <sortField>CREATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
         <fields>Gender__c</fields>
         <fields>Relationship__c</fields>
         <fields>Age__c</fields>
@@ -170,20 +178,14 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Note__c</fields>
-        <fields>CREATED_DATE</fields>
-        <relatedList>Note__c.Family__c</relatedList>
-        <sortField>CREATED_DATE</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>BoxType__c</fields>
         <fields>BoxSize__c</fields>
         <fields>DateOfService__c</fields>
         <fields>Adopted__c</fields>
         <fields>Description__c</fields>
         <relatedList>Service__c.Family__c</relatedList>
+        <sortField>NAME</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>Self__c</fields>
