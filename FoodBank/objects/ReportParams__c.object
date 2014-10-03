@@ -78,6 +78,10 @@
                 <fullName>Demographics Plus</fullName>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>Missed Appointments</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackTrending>false</trackTrending>

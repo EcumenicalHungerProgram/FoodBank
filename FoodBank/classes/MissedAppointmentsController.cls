@@ -7,13 +7,20 @@ public class MissedAppointmentsController {
   public String render_as {get; set;}
   
   public List<Service__c> missed_appointments {get; set;}
+  public Map<Id, String> heads {get; set;}
 
   private void getReportData() {
-    missed_appointments = [SELECT id, TimeSlot__r.DateTime__c, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c, Family__r.Name
+    missed_appointments = [SELECT id, TimeSlot__r.DateTime__c, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c, Family__r.Name, Family__r.id, DistributionMethod__c
         FROM Service__c
         WHERE DateOfService__c = NULL
             AND TimeSlot__r.DateTime__c >= :start_date
             AND TimeSlot__r.DateTime__c < :end_date];
+    
+    Set<Id> missed_ids = new Set<Id>();
+    for (Service__c m: missed_appointments) {
+      missed_ids.add(m.Family__r.id);
+    }
+    heads = HeadOfHouseholdFetcher.fetch(missed_ids);
   }
 
   public MissedAppointmentsController () {
