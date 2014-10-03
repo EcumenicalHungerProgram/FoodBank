@@ -463,6 +463,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>FoodCoupon</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>HolidayGiveaway</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

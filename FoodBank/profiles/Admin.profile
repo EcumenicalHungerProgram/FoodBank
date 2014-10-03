@@ -565,6 +565,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>HolidayGiveaway</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>IncomeEthnicity</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
