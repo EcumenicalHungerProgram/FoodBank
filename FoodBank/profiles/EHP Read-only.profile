@@ -175,6 +175,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>GroupService__c.Comments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>GroupService__c.TotalMeals__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Income__c.Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -465,6 +475,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Family__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>GroupService__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

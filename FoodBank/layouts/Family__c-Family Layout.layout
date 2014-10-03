@@ -204,6 +204,18 @@
         <sortField>CREATED_DATE</sortField>
         <sortOrder>Desc</sortOrder>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>DateOfService__c</fields>
+        <fields>AdultsServed__c</fields>
+        <fields>ChildrenServed__c</fields>
+        <fields>ToGoPlates__c</fields>
+        <fields>Seconds__c</fields>
+        <fields>TotalMeals__c</fields>
+        <relatedList>GroupService__c.Family__c</relatedList>
+        <sortField>DateOfService__c</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
