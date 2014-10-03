@@ -14,5 +14,5 @@
     <tab>Service__c</tab>
     <tab>GroupService__c</tab>
     <tab>TimeSlot__c</tab>
-    <tab>Reports</tab>
+    <tab>Reporting</tab>
 </CustomApplication>
