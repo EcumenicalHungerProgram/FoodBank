@@ -18,6 +18,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DistributionListController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>IncomeEthnicityController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -542,6 +546,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>DemographicsPlus</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>DistributionList</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>

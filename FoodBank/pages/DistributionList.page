@@ -1,0 +1,57 @@
+<apex:page controller="DistributionListController" renderAs="{!render_as}" showHeader="{!show_header}">
+<apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
+
+<apex:form rendered="{!show_header}">
+  <apex:commandLink value="Printable View" action="{!makePrintable}">
+    <apex:param name="render_as" value="pdf" assignTo="{!render_as}"/>
+    <apex:param name="show_header" value="false" assignTo="{!show_header}"/>
+  </apex:commandLink>
+</apex:form>
+
+<apex:form >
+  <h1 style="text-align:center"> Distributions from {!start_date} to {!end_date} </h1>
+</apex:form>
+
+<apex:pageBlock >
+  <apex:pageBlockTable value="{!services}" var="m" rules="all">
+    <apex:column >
+      <apex:outputLink value="/{!m.Family__r.id}">
+          {!heads[m.Family__r.id]}
+      </apex:outputLink>
+      <apex:facet name="header">Name</apex:facet>
+    </apex:column>
+    <apex:column >
+      <apex:outputField value="{!m.TimeSlot__r.DateTime__c}"/>
+      <apex:facet name="header">Appointment Time</apex:facet>
+    </apex:column>
+        <apex:column >
+      <apex:outputField value="{!m.BoxType__c}"/>
+      <apex:facet name="header">Box Type</apex:facet>
+    </apex:column>
+    <apex:column >
+      <apex:outputField value="{!m.BoxSize__c}"/>
+      <apex:facet name="header">Size</apex:facet>
+    </apex:column>
+    <apex:column >
+      <apex:outputField value="{!m.TypeOfMeat__c}"/>
+      <apex:facet name="header">Type of meat</apex:facet>
+    </apex:column>
+    <apex:column >
+      <apex:outputField value="{!m.DistributionMethod__c}"/>
+      <apex:facet name="header">Distribution</apex:facet>
+    </apex:column>
+    <apex:column >
+      <apex:outputField value="TODO"/>
+      <apex:facet name="header"># Kids</apex:facet>
+    </apex:column>
+    <apex:column >
+      <apex:outputField value="{!m.Adopted__c}"/>
+      <apex:facet name="header">Adopted?</apex:facet>
+    </apex:column>
+        <apex:column >
+    <apex:outputField value="{!m.DateOfService__c}"/>
+      <apex:facet name="header">Date Received</apex:facet>
+    </apex:column>
+  </apex:pageBlockTable>
+</apex:pageBlock>
+</apex:page>
