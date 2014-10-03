@@ -442,6 +442,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>DeliveryList</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>Demographics</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

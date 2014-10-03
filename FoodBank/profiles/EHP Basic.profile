@@ -439,6 +439,10 @@
     </layoutAssignments>
     <pageAccesses>
         <apexPage>BirthdayList</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>DeliveryList</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
