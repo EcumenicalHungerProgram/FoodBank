@@ -35,7 +35,7 @@
     <types>
         <members>Expense__c-Expense Layout</members>
         <members>Family__c-Family Layout</members>
-        <members>GroupService__c-GroupService Layout</members>
+        <members>GroupService__c-Group Service Layout</members>
         <members>Income__c-Income Layout</members>
         <members>Note__c-Note Layout</members>
         <members>Person__c-People Layout</members>
