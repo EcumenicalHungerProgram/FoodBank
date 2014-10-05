@@ -9,6 +9,7 @@ public class ReportPickerController {
     report_map.put('Demographics', 'Demographics');
     report_map.put('Demographics Plus', 'DemographicsPlus');
     report_map.put('Missed Appointments', 'MissedAppointments');
+    report_map.put('Delivery List', 'DeliveryList');
   }
   
   public PageReference getReport() {

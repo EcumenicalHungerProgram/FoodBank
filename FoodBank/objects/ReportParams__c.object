@@ -82,6 +82,10 @@
                 <fullName>Missed Appointments</fullName>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>Delivery List</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackTrending>false</trackTrending>
