@@ -41,7 +41,7 @@
       <apex:facet name="header">Distribution</apex:facet>
     </apex:column>
     <apex:column >
-      <apex:outputField value="TODO"/>
+      <apex:outputText value="TODO"/>
       <apex:facet name="header"># Kids</apex:facet>
     </apex:column>
     <apex:column >

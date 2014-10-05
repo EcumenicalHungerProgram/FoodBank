@@ -7,13 +7,14 @@ public class DistributionListController {
   
   public List<Service__c> services {get; set;}
   public Map<Id, String> heads {get; set;}
+  public Integer num {get; set;}
 
   private void getReportData() {
     services = [SELECT id, TimeSlot__r.DateTime__c, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c, Family__r.id, DistributionMethod__c, DateOfService__c
         FROM Service__c
         WHERE TimeSlot__r.DateTime__c >= :start_date
             AND TimeSlot__r.DateTime__c < :end_date];
-    
+    num = services.size();
     Set<Id> family_ids = new Set<Id>();
     for (Service__c s: services) {
       family_ids.add(s.Family__r.id);

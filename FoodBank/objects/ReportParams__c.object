@@ -87,6 +87,10 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Distribution List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Birthday List</fullName>
                 <default>false</default>
             </picklistValues>
