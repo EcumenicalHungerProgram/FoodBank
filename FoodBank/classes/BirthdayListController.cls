@@ -11,8 +11,8 @@ public class BirthdayListController {
         public String     phone {get; set;}
     }
 
-    public Date service_start_date { get; set; }
-    public Date service_end_date { get; set; }
+    public Date start_date { get; set; }
+    public Date end_date { get; set; }
     public Integer birthday_month { get; set; }
     
     public Boolean show_header { get; set; }
@@ -21,7 +21,7 @@ public class BirthdayListController {
     public List<BirthdayInfo> birthdays { get; set; }
 
     private void getReportData() {
-        AggregateResult[] families_served = [SELECT Family__r.id FROM Service__c WHERE DateOfService__c >= :service_start_date AND DateOfService__c < :service_end_date GROUP BY Family__r.id];
+        AggregateResult[] families_served = [SELECT Family__r.id FROM Service__c WHERE DateOfService__c >= :start_date AND DateOfService__c < :end_date GROUP BY Family__r.id];
         List<Id> family_ids = new List<Id>();
         for (AggregateResult ar : families_served) {
             family_ids.add(ar.id);
@@ -66,17 +66,13 @@ public class BirthdayListController {
     }
     
     public BirthdayListController() {
-        
         birthdays = new List<BirthdayInfo>();
-
+        Map<String, String> params = ApexPages.currentPage().getParameters();
+        end_date = params.containsKey('end_date') ? Date.parse(params.get('end_date')) : Date.today();
+        start_date = params.containsKey('start_date') ? Date.parse(params.get('start_date')) : end_date.addYears(-15);
         show_header = true;
         render_as = '';
-        
-        service_end_date = Date.today();
-        service_start_date = service_end_date;
-        service_start_date = service_start_date.addYears(-1);
         birthday_month = 4;
-        
         getReportData();
     }
 }

@@ -86,6 +86,10 @@
                 <fullName>Delivery List</fullName>
                 <default>false</default>
             </picklistValues>
+            <picklistValues>
+                <fullName>Birthday List</fullName>
+                <default>false</default>
+            </picklistValues>
             <sorted>false</sorted>
         </picklist>
         <trackTrending>false</trackTrending>

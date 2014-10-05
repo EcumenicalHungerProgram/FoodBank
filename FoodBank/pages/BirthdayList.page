@@ -12,9 +12,9 @@
   <apex:form >
       <p>For children (age 4-15) of families receiving services during period 
       &nbsp;<apex:outputText value="{0,date,M'/'d'/'yyyy}">
-        <apex:param value="{!service_start_date}"/>
+        <apex:param value="{!start_date}"/>
       </apex:outputText>&nbsp;-&nbsp;<apex:outputText value="{0,date,M'/'d'/'yyyy}">
-        <apex:param value="{!service_end_date}" /> 
+        <apex:param value="{!end_date}" /> 
       </apex:outputText>
       </p>
         <apex:pageBlock id="all"  title="Birthdays" >
