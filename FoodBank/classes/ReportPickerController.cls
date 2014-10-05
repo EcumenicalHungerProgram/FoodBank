@@ -11,6 +11,7 @@ public class ReportPickerController {
     report_map.put('Missed Appointments', 'MissedAppointments');
     report_map.put('Distribution List', 'DistributionList');
     report_map.put('Delivery List', 'DeliveryList');
+    report_map.put('Service History', 'ServiceHistory');
     report_map.put('Birthday List', 'BirthdayList');
   }
   
