@@ -430,6 +430,9 @@
         <layout>Family__c-Family Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>GroupService__c-Group Service Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Income__c-Income Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
