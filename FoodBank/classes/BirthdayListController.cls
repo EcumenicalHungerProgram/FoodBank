@@ -16,7 +16,6 @@ public class BirthdayListController {
     public Integer birthday_month { get; set; }
     
     public Boolean show_header { get; set; }
-    public String render_as { get; set; }
     
     public List<BirthdayInfo> birthdays { get; set; }
 
@@ -71,7 +70,6 @@ public class BirthdayListController {
         end_date = params.containsKey('end_date') ? Date.parse(params.get('end_date')) : Date.today();
         start_date = params.containsKey('start_date') ? Date.parse(params.get('start_date')) : end_date.addYears(-15);
         show_header = true;
-        render_as = '';
         birthday_month = 4;
         getReportData();
     }

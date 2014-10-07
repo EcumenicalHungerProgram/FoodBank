@@ -1,6 +1,130 @@
-<apex:page >
-  <!-- Begin Default Content REMOVE THIS -->
-  <h1>Congratulations</h1>
-  This is your new Page
-  <!-- End Default Content REMOVE THIS -->
+<apex:page controller="HolidayGiveawayController" showHeader="{!show_header}">
+<apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
+  
+<style>
+.holiday-header-center {
+  width:66%;
+  float:left;
+  text-align:center;
+}
+
+.holiday-service-info {
+  width: 33%;
+  float:right;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.holiday-family-info {
+  width:50%;
+  float:left;
+}
+
+.holiday-contact-info {
+  width:50%;
+  float:right;
+}
+</style>
+
+<apex:form rendered="{!show_header}">
+  <apex:commandLink value="Printable View" action="{!makePrintable}">
+    <apex:param name="show_header" value="false" assignTo="{!show_header}"/>
+  </apex:commandLink>
+</apex:form>
+
+<div class="holiday-header">
+  <div class="holiday-header-center">
+    <apex:pageBlock >
+      ECUMENICAL HUNGER PROGRAM <br/>
+      Thanksgiving 2012
+    </apex:pageBlock>
+  </div>
+
+
+  <div class="holiday-service-info">
+    <apex:pageBlock >
+      <apex:pageBlockSection >
+        <apex:outputField value="{!service.TimeSlot__r.DateTime__c}" label="Pickup Time"/> <br/>
+        <apex:outputField value="{!service.BoxSize__c}" label="Box Size"/> <br/>
+        <apex:outputField value="{!service.TypeOfMeat__c}" label="Type of Meat"/> <br/>
+        <apex:outputField value="{!service.Family__r.NumPeople__c}" label="# in Family"/>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </div>
+</div>
+
+<div class="clear-both"></div>
+
+<div class="family-and-contact-info">
+  <div class="holiday-family-info">
+    <apex:pageBlock >
+      <apex:pageBlockSection >
+        <apex:outputText label="Client name">
+          <apex:outputLink value="/{!service.Family__r.id}">
+            [<apex:outputField value="{!service.Family__r.Name}"/>]
+          </apex:outputLink>
+          {!head}
+        </apex:outputText> <br/>
+        <apex:outputField value="{!service.Family__r.AddressCombined__c}" label="Address"/> <br/>
+        <apex:outputField value="{!service.Family__r.Ethnicity__c}" label="Ethnicity"/> <br/>
+        <apex:outputField value="{!service.Family__r.SpecialNeeds__c}" label="Special Needs"/>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </div>
+  <div class="holiday-contact-info">
+    <apex:pageBlock >
+      <apex:pageBlockTable value="{!phones}" var="p">
+        <apex:column value="{!p.Type__c}">
+          <apex:facet name="header">Type</apex:facet>
+        </apex:column>
+        <apex:column value="{!p.Number__c}">
+          <apex:facet name="header">Number</apex:facet>
+        </apex:column>
+        <apex:column value="{!p.BestTime__c}">
+          <apex:facet name="header">Best time</apex:facet>
+        </apex:column>
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+  </div>
+</div>
+
+<apex:pageBlock >
+  <apex:pageBlockSection title="Comments">
+     <apex:outputField value="{!service.Family__r.HolidayComments__c}" label=""/> 
+  </apex:pageBlockSection>
+</apex:pageBlock>
+
+<apex:pageBlock >
+  <apex:pageBlockTable value="{!people}" var="p">
+    <apex:column value="{!p.FirstName__c}">
+      <apex:facet name="header">First name</apex:facet>
+    </apex:column>
+    <apex:column value="{!p.LastName__c}">
+      <apex:facet name="header">Last name</apex:facet>
+    </apex:column>
+    <apex:column value="{!p.Gender__c}">
+      <apex:facet name="header">Gender</apex:facet>
+    </apex:column>
+    <apex:column value="{!p.DOB__c}">
+      <apex:facet name="header">Birthdate</apex:facet>
+    </apex:column>
+    <apex:column value="{!p.Age__c}">
+      <apex:facet name="header">Age</apex:facet>
+    </apex:column>
+    <apex:column value="{!p.Relationship__c}">
+      <apex:facet name="header">Relationship</apex:facet>
+    </apex:column>
+    <apex:column value="{!p.Guest__c}">
+      <apex:facet name="header">Guest</apex:facet>
+    </apex:column>
+    <apex:column value="{!p.ClothingSize__c}">
+      <apex:facet name="header">Size</apex:facet>
+    </apex:column>
+  </apex:pageBlockTable>
+</apex:pageBlock>
+
+<div class="same-address">
+</div>
 </apex:page>

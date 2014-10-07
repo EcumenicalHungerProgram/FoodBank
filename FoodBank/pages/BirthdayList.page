@@ -1,10 +1,9 @@
-<apex:page controller="BirthdayListController" title="Client Demographics" renderAs="{!render_as}" showHeader="{!show_header}">
+<apex:page controller="BirthdayListController" title="Client Demographics" showHeader="{!show_header}">
   <apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
   
   <h1>{!month} Birthdays</h1>
   <apex:form rendered="{!show_header}">
       <apex:commandLink value="Printable View" action="{!makePrintable}">
-          <apex:param name="render_as" value="pdf" assignTo="{!render_as}"/>
           <apex:param name="show_header" value="false" assignTo="{!show_header}"/>
       </apex:commandLink>
   </apex:form>

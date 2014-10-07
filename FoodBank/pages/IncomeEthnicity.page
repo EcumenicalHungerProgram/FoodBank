@@ -1,9 +1,8 @@
-<apex:page controller="IncomeEthnicityController" renderAs="{!render_as}" showHeader="{!show_header}">
+<apex:page controller="IncomeEthnicityController" showHeader="{!show_header}">
 <apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
 
 <apex:form rendered="{!show_header}">
   <apex:commandLink value="Printable View" action="{!makePrintable}">
-    <apex:param name="render_as" value="pdf" assignTo="{!render_as}"/>
     <apex:param name="show_header" value="false" assignTo="{!show_header}"/>
   </apex:commandLink>
 </apex:form>

@@ -38,6 +38,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>HolidayGiveawayController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>IncomeEthnicityController</apexClass>
         <enabled>false</enabled>
     </classAccesses>

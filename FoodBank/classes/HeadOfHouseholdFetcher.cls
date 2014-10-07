@@ -17,4 +17,10 @@ public class HeadOfHouseholdFetcher {
     }
     return heads;
   }
+  
+  public static String fetchSingle(Id family_id) {
+    Set<Id> ids = new Set<Id>();
+    ids.add(family_id);
+    return fetch(ids).get(family_id);
+  }
 }

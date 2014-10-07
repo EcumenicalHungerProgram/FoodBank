@@ -1,138 +1,135 @@
 <apex:page controller="DemographicsPlusController"
-	title="Client Demographics" renderAs="{!render_as}"
-	showHeader="{!show_header}">
-	<apex:styleSheet value="{!URLFOR($Resource.FoodBank)}" />
+    title="Client Demographics" showHeader="{!show_header}">
+    <apex:styleSheet value="{!URLFOR($Resource.FoodBank)}" />
 
-	<!-- Need this variables for totals generation -->
-	<apex:variable value="{!0}" var="total1" />
-	<apex:variable value="{!0}" var="total2" />
-	<apex:variable value="{!0}" var="total3" />
-	<apex:variable value="{!0}" var="total4" />
-	<apex:variable value="{!0}" var="total5" />
-	<apex:variable value="{!0}" var="total6" />
-	<apex:variable value="{!0}" var="total7" />
-	<apex:variable value="{!0}" var="total8" />
+    <!-- Need this variables for totals generation -->
+    <apex:variable value="{!0}" var="total1" />
+    <apex:variable value="{!0}" var="total2" />
+    <apex:variable value="{!0}" var="total3" />
+    <apex:variable value="{!0}" var="total4" />
+    <apex:variable value="{!0}" var="total5" />
+    <apex:variable value="{!0}" var="total6" />
+    <apex:variable value="{!0}" var="total7" />
+    <apex:variable value="{!0}" var="total8" />
 
-	<h1>Client Demographics</h1>
-	<apex:form rendered="{!show_header}">
-		<apex:commandLink value="Printable View" action="{!makePrintable}">
-			<apex:param name="render_as" value="pdf" assignTo="{!render_as}" />
-			<apex:param name="show_header" value="false"
-				assignTo="{!show_header}" />
-		</apex:commandLink>
-	</apex:form>
+    <h1>Client Demographics</h1>
+    <apex:form rendered="{!show_header}">
+        <apex:commandLink value="Printable View" action="{!makePrintable}">
+            <apex:param name="show_header" value="false" assignTo="{!show_header}" />
+        </apex:commandLink>
+    </apex:form>
 
-	<apex:form>
-		<p>{!start_date} - {!end_date}</p>
-		<p># Households: {!num_households}</p>
+    <apex:form >
+        <p>{!start_date} - {!end_date}</p>
+        <p># Households: {!num_households}</p>
 
-		<apex:pageBlock id="all" title="All People">
-			<apex:pageBlockTable value="{!stats_all}" var="c">
-				<apex:column width="40%">
+        <apex:pageBlock id="all" title="All People">
+            <apex:pageBlockTable value="{!stats_all}" var="c">
+                <apex:column width="40%">
                     {!c.title}
                     <apex:facet name="footer">Total</apex:facet>
-				</apex:column>
-				<apex:column width="15%">
+                </apex:column>
+                <apex:column width="15%">
                     {!c.male}
                     <apex:facet name="header">Male</apex:facet>
-					<apex:variable var="total1" value="{!total1 + c.male}" />
-					<apex:facet name="footer">
-						<span class="t1"></span>
-					</apex:facet>
-				</apex:column>
-				<apex:column width="15%">
+                    <apex:variable var="total1" value="{!total1 + c.male}" />
+                    <apex:facet name="footer">
+                        <span class="t1"></span>
+                    </apex:facet>
+                </apex:column>
+                <apex:column width="15%">
                     {!c.female}
                     <apex:facet name="header">Female</apex:facet>
-					<apex:variable var="total2" value="{!total2 + c.female}" />
-					<apex:facet name="footer">
-						<span class="t2"></span>
-					</apex:facet>
-				</apex:column>
-				<apex:column width="15%">
+                    <apex:variable var="total2" value="{!total2 + c.female}" />
+                    <apex:facet name="footer">
+                        <span class="t2"></span>
+                    </apex:facet>
+                </apex:column>
+                <apex:column width="15%">
                     {!c.unknown}
                     <apex:facet name="header">Unknown</apex:facet>
-					<apex:variable var="total3" value="{!total3 + c.unknown}" />
-					<apex:facet name="footer">
-						<span class="t3"></span>
-					</apex:facet>
-				</apex:column>
-				<apex:column width="15%">
+                    <apex:variable var="total3" value="{!total3 + c.unknown}" />
+                    <apex:facet name="footer">
+                        <span class="t3"></span>
+                    </apex:facet>
+                </apex:column>
+                <apex:column width="15%">
                     {!c.total}
                     <apex:facet name="header">Total</apex:facet>
-					<apex:variable var="total4" value="{!total4 + c.total}" />
-					<apex:facet name="footer">
-						<span class="t4"></span>
-					</apex:facet>
-				</apex:column>
-			</apex:pageBlockTable>
-		</apex:pageBlock>
+                    <apex:variable var="total4" value="{!total4 + c.total}" />
+                    <apex:facet name="footer">
+                        <span class="t4"></span>
+                    </apex:facet>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
 
-		<apex:pageBlock id="children" title="Children by Age Range">
-			<apex:pageBlockTable value="{!stats_children}" var="c">
-				<apex:column width="40%">
+        <apex:pageBlock id="children" title="Children by Age Range">
+            <apex:pageBlockTable value="{!stats_children}" var="c">
+                <apex:column width="40%">
                     {!c.title}
                     <apex:facet name="footer">Total</apex:facet>
-				</apex:column>
-				<apex:column width="15%">
+                </apex:column>
+                <apex:column width="15%">
                     {!c.male}
                     <apex:facet name="header">Boys</apex:facet>
-					<apex:variable var="total5" value="{!total5 + c.male}" />
-					<apex:facet name="footer">
-						<span class="t5"></span>
-					</apex:facet>
-				</apex:column>
-				<apex:column width="15%">
+                    <apex:variable var="total5" value="{!total5 + c.male}" />
+                    <apex:facet name="footer">
+                        <span class="t5"></span>
+                    </apex:facet>
+                </apex:column>
+                <apex:column width="15%">
                     {!c.female}
                     <apex:facet name="header">Girls</apex:facet>
-					<apex:variable var="total6" value="{!total6 + c.female}" />
-					<apex:facet name="footer">
-						<span class="t6"></span>
-					</apex:facet>
-				</apex:column>
-				<apex:column width="15%">
+                    <apex:variable var="total6" value="{!total6 + c.female}" />
+                    <apex:facet name="footer">
+                        <span class="t6"></span>
+                    </apex:facet>
+                </apex:column>
+                <apex:column width="15%">
                     {!c.unknown}
                     <apex:facet name="header">Unknown</apex:facet>
-					<apex:variable var="total7" value="{!total7 + c.unknown}" />
-					<apex:facet name="footer">
-						<span class="t7"></span>
-					</apex:facet>
-				</apex:column>
-				<apex:column width="15%">
+                    <apex:variable var="total7" value="{!total7 + c.unknown}" />
+                    <apex:facet name="footer">
+                        <span class="t7"></span>
+                    </apex:facet>
+                </apex:column>
+                <apex:column width="15%">
                     {!c.total}
                     <apex:facet name="header">Total</apex:facet>
-					<apex:variable var="total8" value="{!total8 + c.total}" />
-					<apex:facet name="footer">
-						<span class="t8"></span>
-					</apex:facet>
-				</apex:column>
-			</apex:pageBlockTable>
-		</apex:pageBlock>
+                    <apex:variable var="total8" value="{!total8 + c.total}" />
+                    <apex:facet name="footer">
+                        <span class="t8"></span>
+                    </apex:facet>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
 
-		<script>
-	        // Here we will set the generated subtotals to the footer cells
-	        document.getElementsByClassName('t1')[0].innerHTML = '{!total1}';
-	        document.getElementsByClassName('t2')[0].innerHTML = '{!total2}';
-	        document.getElementsByClassName('t3')[0].innerHTML = '{!total3}';
-	        document.getElementsByClassName('t4')[0].innerHTML = '{!total4}';
-	        document.getElementsByClassName('t5')[0].innerHTML = '{!total5}';
-	        document.getElementsByClassName('t6')[0].innerHTML = '{!total6}';
-	        document.getElementsByClassName('t7')[0].innerHTML = '{!total7}';
-	        document.getElementsByClassName('t8')[0].innerHTML = '{!total8}';
-	    </script>
+        <script>
+            // Here we will set the generated subtotals to the footer cells
+            document.getElementsByClassName('t1')[0].innerHTML = '{!total1}';
+            document.getElementsByClassName('t2')[0].innerHTML = '{!total2}';
+            document.getElementsByClassName('t3')[0].innerHTML = '{!total3}';
+            document.getElementsByClassName('t4')[0].innerHTML = '{!total4}';
+            document.getElementsByClassName('t5')[0].innerHTML = '{!total5}';
+            document.getElementsByClassName('t6')[0].innerHTML = '{!total6}';
+            document.getElementsByClassName('t7')[0].innerHTML = '{!total7}';
+            document.getElementsByClassName('t8')[0].innerHTML = '{!total8}';
+        </script>
 
-	</apex:form>
+    </apex:form>
 
-	<h2>Classified (coded as):</h2>
+    <h2>Classified (coded as):</h2>
 
-	<table>
-		<tr>
-			<td>Children:</td>
-			<td>{!num_children}</td>
-		</tr>
-		<tr>
-			<td>Adults:</td>
-			<td>{!num_adults}</td>
-		</tr>
-	</table>
+    <table>
+        <tr>
+            <td>Children:</td>
+            <td>{!num_children}</td>
+        </tr>
+        <tr>
+            <td>Adults:</td>
+            <td>{!num_adults}</td>
+        </tr>
+    </table>
 
 </apex:page>

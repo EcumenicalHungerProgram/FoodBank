@@ -32,7 +32,6 @@ public class DemographicsPlusController {
     public Integer num_adults { get { return num_people - num_children; } }
     
     public Boolean show_header { get; set; }
-    public String render_as { get; set; }
     
     public Date start_date { get; set; }
     public Date end_date { get; set; }
@@ -95,7 +94,6 @@ public class DemographicsPlusController {
         num_children = 0;
         
         show_header = true;
-        render_as = 'html';
         
         totals.add(new GenderInfo('Children (Age 0-17)', 0, 17));
         totals.add(new GenderInfo('Adults (18-64)', 18, 64));

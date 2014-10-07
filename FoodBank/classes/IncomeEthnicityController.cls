@@ -18,7 +18,6 @@ public class IncomeEthnicityController {
   public List<List<String>> income_ethnicity_out {get; set;}
   
   public boolean show_header {get; set;}
-  public String render_as {get; set;}
   
   private class ServiceCountInfo {
     public Integer one_service {get; set;}
@@ -168,7 +167,6 @@ public class IncomeEthnicityController {
     num_adults = 0;
     num_children = 0;
     num_people = 0;
-    render_as = '';
     show_header = true;
   }
 
