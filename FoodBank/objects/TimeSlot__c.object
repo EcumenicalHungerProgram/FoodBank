@@ -175,7 +175,7 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
     </fields>
-    <label>TimeSlot</label>
+    <label>Time Slot</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
@@ -185,7 +185,7 @@
         <label>Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>TimeSlots</pluralLabel>
+    <pluralLabel>Time Slots</pluralLabel>
     <searchLayouts>
         <customTabListAdditionalFields>NumSlots__c</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>NumSlots__c</lookupDialogsAdditionalFields>
