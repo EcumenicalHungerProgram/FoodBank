@@ -675,6 +675,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Reports</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Service__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
