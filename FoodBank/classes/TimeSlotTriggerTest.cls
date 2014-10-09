@@ -67,13 +67,15 @@ private class TimeSlotTriggerTest{
     // Undeleting should increment again.
     undelete service;
 
-    // Verify that the results are as expected.
-    timeslotA = [SELECT Allocated__c,NumSlots__c,Free__c
-         FROM TimeSlot__c
-         WHERE Id = :timeslotA.Id];
-    System.assertEquals(1, timeslotA.Allocated__c);
-    System.assertEquals(15, timeslotA.NumSlots__c);
-    System.assertEquals(14, timeslotA.Free__c);
+    if (true) {
+        // Verify that the results are as expected.
+        timeslotA = [SELECT Allocated__c,NumSlots__c,Free__c
+             FROM TimeSlot__c
+             WHERE Id = :timeslotA.Id];
+        System.assertEquals(1, timeslotA.Allocated__c);
+        System.assertEquals(15, timeslotA.NumSlots__c);
+        System.assertEquals(14, timeslotA.Free__c);
+    }
 
     // Now switch from "A" to "B" and verify both timeslots
     service.TimeSlot__c = timeslotB.Id;

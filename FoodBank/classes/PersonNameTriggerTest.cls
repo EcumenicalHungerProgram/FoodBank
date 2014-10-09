@@ -17,5 +17,7 @@ private class PersonNameTriggerTest{
          FROM Person__c
          WHERE Family__c = :family.Id];
     System.assertEquals('Smith, Joe', person.Name);
+
+    delete person;
   }
 }

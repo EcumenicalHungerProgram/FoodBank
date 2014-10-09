@@ -9,6 +9,8 @@ public class HolidayGiveawayController {
   public String head {get; set;}
 
   private void getReportData(Id service_id) {
+    if (service_id == null)
+      return;
     service = [SELECT id, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c ,DistributionMethod__c,
         TimeSlot__r.DateTime__c,
         Family__r.Name, Family__r.id, Family__r.AddressCombined__c, Family__r.Ethnicity__c, Family__r.SpecialNeeds__c,
@@ -25,10 +27,13 @@ public class HolidayGiveawayController {
   }
 
   public HolidayGiveawayController() {
-    Map<String, String> params = ApexPages.currentPage().getParameters();
-    Id service_id = Id.valueof(params.get('id'));
     render_as = '';
     show_header = true;
+    Map<String, String> params = ApexPages.currentPage().getParameters();
+    Id service_id = null;
+    if (params.containsKey('id')) {
+        service_id = Id.valueof(params.get('id'));
+    }
     getReportData(service_id);
   }
   
