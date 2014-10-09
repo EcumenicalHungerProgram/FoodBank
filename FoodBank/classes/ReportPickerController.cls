@@ -19,9 +19,13 @@ public class ReportPickerController {
     Date start_date = report_params.StartDate__c;
     Date end_date = report_params.EndDate__c;
     String report_type = report_params.ReportType__c;
-    PageReference reportPage = new PageReference('/apex/' + report_map.get(report_type));
-    reportPage.getParameters().put('start_date', start_date.format());
-    reportPage.getParameters().put('end_date', end_date.format());
-    return reportPage;
+    if (report_map.containsKey(report_type)) {
+        PageReference reportPage = new PageReference('/apex/' + report_map.get(report_type));
+        reportPage.getParameters().put('start_date', start_date.format());
+        reportPage.getParameters().put('end_date', end_date.format());
+        return reportPage;
+    } else {
+      return null;
+    }
   }
 }

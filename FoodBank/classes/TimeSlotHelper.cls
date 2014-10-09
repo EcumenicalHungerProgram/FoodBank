@@ -20,10 +20,6 @@ public with sharing class TimeSlotHelper {
     // Update the allocated counts for the supplied set of TimeSlot ID's
     public void updateAllocatedCount(set<string> timeslotIDs) {
 
-        if (timeslotIDs == null || timeslotIDs.isEmpty()) {
-            return;
-        }
-
         if (timeslotIDs.size() > maxTimeSlotIDs) {
             while (!timeslotIDs.isEmpty()) {
                 updateAllocatedCount(extractSubset(timeslotIDs, maxTimeSlotIDs));
