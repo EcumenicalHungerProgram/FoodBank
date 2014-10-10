@@ -83,6 +83,7 @@
         <externalId>false</externalId>
         <formula>HYPERLINK(Id, TEXT(VerifFor__c) &amp; &quot;: &quot; &amp; TEXT(TypeDoc__c), &quot;_self&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is automatically set based on other verification values.</inlineHelpText>
         <label>Name</label>
         <required>false</required>
         <trackTrending>false</trackTrending>

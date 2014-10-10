@@ -60,6 +60,7 @@
         <externalId>false</externalId>
         <formula>YEAR(DATEVALUE(NOW()))-YEAR( DOB__c )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculated from DOB</inlineHelpText>
         <label>Age</label>
         <precision>18</precision>
         <required>false</required>
@@ -132,6 +133,7 @@
         <fullName>DOB__c</fullName>
         <description>Date of birth</description>
         <externalId>false</externalId>
+        <inlineHelpText>Date of birth</inlineHelpText>
         <label>DOB</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -152,6 +154,7 @@
     <fields>
         <fullName>Family__c</fullName>
         <externalId>false</externalId>
+        <inlineHelpText>The family (or group) this person is a member of.</inlineHelpText>
         <label>Family</label>
         <referenceTo>Family__c</referenceTo>
         <relationshipLabel>People</relationshipLabel>
@@ -197,6 +200,7 @@
         <fullName>Guest__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
+        <inlineHelpText>Is this person a guest (non-permanent resident) at the family&apos;s address?</inlineHelpText>
         <label>Guest</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -206,6 +210,7 @@
         <fullName>IDVerificationComment__c</fullName>
         <description>Notes (if any) pertinent to the ID verification</description>
         <externalId>false</externalId>
+        <inlineHelpText>Notes (if any) pertinent to the ID verification</inlineHelpText>
         <label>ID Verification Comment</label>
         <length>64</length>
         <required>false</required>
@@ -218,6 +223,7 @@
         <fullName>ID_Verif_DocType__c</fullName>
         <description>The type of document used to verify the person&apos;s identification.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The type of document used to verify the person&apos;s identification.</inlineHelpText>
         <label>ID Verification Doc Type</label>
         <picklist>
             <picklistValues>
@@ -287,6 +293,7 @@
     <fields>
         <fullName>Relationship__c</fullName>
         <externalId>false</externalId>
+        <inlineHelpText>This person&apos;s relationship to the head of household.</inlineHelpText>
         <label>Relationship</label>
         <picklist>
             <picklistValues>
