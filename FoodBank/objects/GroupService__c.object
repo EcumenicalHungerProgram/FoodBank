@@ -97,15 +97,17 @@
     </fields>
     <fields>
         <fullName>Family__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
+        <description>The group to which this service was provided</description>
         <externalId>false</externalId>
         <label>Family</label>
         <referenceTo>Family__c</referenceTo>
         <relationshipLabel>Group Services</relationshipLabel>
         <relationshipName>GroupServices</relationshipName>
-        <required>true</required>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
-        <type>Lookup</type>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
         <fullName>Seconds__c</fullName>
@@ -163,5 +165,5 @@
     </nameField>
     <pluralLabel>Group Services</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
