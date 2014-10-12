@@ -731,6 +731,7 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
     </nameField>
     <pluralLabel>Families</pluralLabel>
     <searchLayouts>
+        <customTabListAdditionalFields>AddressCombined__c</customTabListAdditionalFields>
         <searchResultsAdditionalFields>Ethnicity__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>AddressCombined__c</searchResultsAdditionalFields>
     </searchLayouts>
