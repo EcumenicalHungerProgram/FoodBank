@@ -3,6 +3,6 @@
     <description>Report Picker</description>
     <label>Reporting</label>
     <mobileReady>false</mobileReady>
-    <motif>Custom83: Pencil</motif>
+    <motif>Custom18: Form</motif>
     <page>ReportPicker</page>
 </CustomTab>
