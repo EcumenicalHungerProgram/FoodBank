@@ -178,6 +178,11 @@
     <label>Time Slot</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>NumSlots__c</columns>
+        <columns>Free__c</columns>
+        <columns>Allocated__c</columns>
+        <columns>Season__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

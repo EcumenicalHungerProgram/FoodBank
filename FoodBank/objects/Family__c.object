@@ -722,6 +722,10 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
     <label>Family</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>AddressCombined__c</columns>
+        <columns>NumPeople__c</columns>
+        <columns>Ethnicity__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
