@@ -38,8 +38,16 @@
       <apex:facet name="header">Type of meat</apex:facet>
     </apex:column>
     <apex:column >
+      <apex:outputField value="{!s.DistributionMethod__c}"/>
+      <apex:facet name="header">Distribution Method</apex:facet>
+    </apex:column>
+    <apex:column >
       <apex:outputField value="{!s.Adopted__c}"/>
       <apex:facet name="header">Adopted?</apex:facet>
+    </apex:column>
+    <apex:column >
+      <apex:outputField value="{!s.TimeSlot__r.DateTime__c}"/>
+      <apex:facet name="header">Time Slot</apex:facet>
     </apex:column>
   </apex:pageBlockTable>
 </apex:pageBlock>

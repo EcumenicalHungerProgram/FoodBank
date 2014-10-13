@@ -7,7 +7,7 @@ public class ServiceHistoryController{
   public List<Service__c> services {get; set;}
 
   private void getReportData() {
-    services = [SELECT id, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c, Family__r.Name, Type__c, DateOfService__c
+    services = [SELECT id, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c, Family__r.Name, Type__c, DateOfService__c, DistributionMethod__c, TimeSlot__r.DateTime__c
         FROM Service__c
         WHERE DateOfService__c >= :start_date AND DateOfService__c < :end_date];
   }
