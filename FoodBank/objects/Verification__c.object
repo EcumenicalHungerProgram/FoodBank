@@ -358,6 +358,11 @@
     <label>Verification</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>VerifFor__c</columns>
+        <columns>TypeDoc__c</columns>
+        <columns>Family__c</columns>
+        <columns>Comments__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

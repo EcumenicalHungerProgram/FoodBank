@@ -144,14 +144,14 @@
     </fields>
     <label>Phone</label>
     <listViews>
-        <fullName>All_Grid</fullName>
+        <fullName>All</fullName>
         <columns>Family__c</columns>
         <columns>Self__c</columns>
         <columns>Type__c</columns>
         <columns>BestTime__c</columns>
         <columns>Note__c</columns>
         <filterScope>Everything</filterScope>
-        <label>All (Grid)</label>
+        <label>All</label>
     </listViews>
     <nameField>
         <displayFormat>{0}</displayFormat>

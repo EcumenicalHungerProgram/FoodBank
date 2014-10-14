@@ -247,6 +247,9 @@
     <label>Expense</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>Self__c</columns>
+        <columns>Family__c</columns>
+        <columns>Section8__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

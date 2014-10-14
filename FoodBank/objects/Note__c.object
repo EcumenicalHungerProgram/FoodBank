@@ -79,6 +79,9 @@
     <label>Note</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Family__c</columns>
+        <columns>Note__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

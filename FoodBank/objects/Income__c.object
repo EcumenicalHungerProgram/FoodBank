@@ -246,6 +246,11 @@
     <label>Income</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Family__c</columns>
+        <columns>Amount__c</columns>
+        <columns>IncomeSource__c</columns>
+        <columns>ReceivedOn__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

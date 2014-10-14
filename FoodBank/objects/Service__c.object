@@ -476,6 +476,15 @@
     <label>Service</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Family__c</columns>
+        <columns>Type__c</columns>
+        <columns>TypeOfService__c</columns>
+        <columns>TypeOfMeat__c</columns>
+        <columns>TimeSlot__c</columns>
+        <columns>BoxType__c</columns>
+        <columns>BoxSize__c</columns>
+        <columns>DateOfService__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
