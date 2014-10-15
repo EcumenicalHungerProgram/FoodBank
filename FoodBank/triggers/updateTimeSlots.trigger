@@ -3,18 +3,28 @@ trigger updateTimeSlots on Service__c (before update, after update, after delete
 
     if (trigger.isInsert) {
         for (Service__c service : Trigger.new)
-            timeslots.add(service.TimeSlot__c);
+            if (service.TimeSlot__c != null) {
+              timeslots.add(service.TimeSlot__c);
+            }
     } else if (trigger.isDelete) {
         for (Service__c service : Trigger.old)
-            timeslots.add(service.TimeSlot__c);
+            if (service.TimeSlot__c != null) {
+              timeslots.add(service.TimeSlot__c);
+            }
     } else if (trigger.isUnDelete) {
         for (Service__c service : Trigger.new)
-            timeslots.add(service.TimeSlot__c);
+             if (service.TimeSlot__c != null) {
+              timeslots.add(service.TimeSlot__c);
+            }
     } else if (trigger.isUpdate) {
         for (Service__c service : Trigger.new)
-            timeslots.add(service.TimeSlot__c);
+             if (service.TimeSlot__c != null) {
+              timeslots.add(service.TimeSlot__c);
+            }
         for (Service__c service : Trigger.old)
-            timeslots.add(service.TimeSlot__c);
+             if (service.TimeSlot__c != null) {
+              timeslots.add(service.TimeSlot__c);
+            }
     }
 
     if(!timeslots.isEmpty()) {
