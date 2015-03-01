@@ -11,13 +11,12 @@
   <h1 style="text-align:center"> Household/People Served from {!start_date} to {!end_date} </h1>
 </apex:form>
 
-<h2>Number of households</h2> <br/>
-{!num_households} <br/>
-
-<h2> Number of people </h2> <br/>
+Number of households - {!num_households} <br/>
 Total adults in Households - {!num_adults} <br/>
 Total children in Households - {!num_children} <br/>
 Total People in Households - {!num_people} <br/>
+Total Food Services Provided - {!num_foodboxes} <br/>
+New people added this period - {!num_newpeople} <br/>
 
 <apex:pageBlock id="all" title="Service Counts" >
   <apex:pageBlockTable value="{!service_counts_out}" var="sci" rules="all" border="1">

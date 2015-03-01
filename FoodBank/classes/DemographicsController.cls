@@ -1,15 +1,23 @@
 public class DemographicsController {
     
     public Integer num_gender_blank { get; set; }
+    public Integer percent_gender_blank {get; set;}
     public Integer num_gender_female { get; set; }
+    public Integer percent_gender_female { get; set; }
     public Integer num_gender_male { get; set; }
+    public Integer percent_gender_male { get; set; }
 
     public Integer num_age_blank { get; set; }
+    public Integer percent_age_blank { get; set; }
     public Integer num_age_youth { get; set; }
+    public Integer percent_age_youth { get; set; }
     public Integer num_age_adult { get; set; }
+    public Integer percent_age_adult { get; set; }
     public Integer num_age_elderly { get; set; }
+    public Integer percent_age_elderly { get; set; }
 
     public Integer num_age_non_youth { get; set; }
+    public Integer percent_age_non_youth { get; set; }
     public Integer num_people { get; set; }
     public Integer num_households { get; set; }
     
@@ -45,18 +53,36 @@ public class DemographicsController {
                 num_age_elderly++;
         }
         
-        num_age_non_youth = num_people - num_age_youth;        
+        num_age_non_youth = num_people - num_age_youth;
+
+        percent_gender_blank = (num_gender_blank * 100) / num_people;
+        percent_gender_female = (num_gender_female * 100) / num_people;
+        percent_gender_male = (num_gender_male * 100) / num_people;
+
+        percent_age_blank = (num_age_blank * 100) / num_people;
+        percent_age_youth = (num_age_youth * 100) / num_people;
+        percent_age_adult = (num_age_adult * 100) / num_people;
+        percent_age_elderly = (num_age_elderly * 100) / num_people;
+
+        percent_age_non_youth = (num_age_non_youth * 100) / num_people;
     }
     
     public DemographicsController() {
         num_gender_blank = 0;
+        percent_gender_blank = 0;
         num_gender_female = 0;
+        percent_gender_female = 0;
         num_gender_male = 0;
+        percent_gender_male = 0;
 
         num_age_blank = 0;
+        percent_age_blank = 0;
         num_age_youth = 0;
+        percent_age_youth = 0;
         num_age_adult = 0;
+        percent_age_adult = 0;
         num_age_elderly = 0;
+        percent_age_elderly = 0;
 
         num_age_non_youth = 0;
         num_households = 0;

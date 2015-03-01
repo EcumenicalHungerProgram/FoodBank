@@ -3,6 +3,8 @@ public class IncomeEthnicityController {
   public Integer num_adults {get; set;}
   public Integer num_children {get; set;}
   public Integer num_people {get; set;}
+  public Integer num_foodboxes {get; set;}
+  public Integer num_newpeople {get; set;}
   
   public Date start_date { get; set;}
   public Date end_date { get; set;}
@@ -67,6 +69,15 @@ public class IncomeEthnicityController {
       }
     }
     num_people = people_served.size();
+    
+    Service__c[] food_services = [SELECT id from Service__c
+       WHERE DateOfService__c >= :start_date AND DateOfService__c < :end_date
+       AND Service__c.Type__c = 'Food'];
+    num_foodboxes = food_services.size();
+    
+    Person__c[] new_people = [SELECT id from Person__c
+       WHERE CreatedDate >= :start_date AND CreatedDate < :end_date];
+    num_newpeople = new_people.size();
   }
   
   private void updateIncomeEthnicity(String t, String e) {
@@ -167,6 +178,8 @@ public class IncomeEthnicityController {
     num_adults = 0;
     num_children = 0;
     num_people = 0;
+    num_foodboxes = 0;
+    num_newpeople = 0;
     show_header = true;
   }
 

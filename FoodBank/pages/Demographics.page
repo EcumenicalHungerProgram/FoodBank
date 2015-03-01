@@ -19,17 +19,17 @@
       <tr>
         <td>blank</td>
         <td class="tdnum">{!num_gender_blank}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_gender_blank}%</td>
       </tr>
       <tr>
         <td>Female</td>
         <td class="tdnum">{!num_gender_female}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_gender_female}%</td>
       </tr>
       <tr>
         <td>Male</td>
         <td class="tdnum">{!num_gender_male}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_gender_male}%</td>
       </tr>
       
       <tr>
@@ -38,33 +38,33 @@
       <tr>
         <td>blank</td>
         <td class="tdnum">{!num_age_blank}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_age_blank}%</td>
       </tr>
       <tr>
         <td>0-17</td>
         <td class="tdnum">{!num_age_youth}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_age_youth}%</td>
       </tr>
       <tr>
         <td>18-64</td>
         <td class="tdnum">{!num_age_adult}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_age_adult}%</td>
       </tr>
       <tr>
         <td>65+</td>
         <td class="tdnum">{!num_age_elderly}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_age_elderly}%</td>
       </tr>
       
       <tr>
         <td>Adults (18+)</td>
         <td class="tdnum">{!num_age_non_youth}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_age_non_youth}%</td>
       </tr>
       <tr>
         <td>Children (&lt;18)</td>
         <td class="tdnum">{!num_age_youth}</td>
-        <td class="tdnum">?%</td>
+        <td class="tdnum">{!percent_age_youth}%</td>
       </tr>
       <tr>
         <td colspan="3" class="tablegroup">Totals</td>
