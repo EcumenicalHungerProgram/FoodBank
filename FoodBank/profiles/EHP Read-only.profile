@@ -144,11 +144,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Family__c.Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Family__c.Comments__c</field>
         <readable>true</readable>
     </fieldPermissions>

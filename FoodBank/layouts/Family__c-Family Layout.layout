@@ -87,10 +87,6 @@
                 <field>Languages__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Code__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>NumPeople__c</field>
             </layoutItems>

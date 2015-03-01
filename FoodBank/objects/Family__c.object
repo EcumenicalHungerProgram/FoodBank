@@ -94,28 +94,6 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Code__c</fullName>
-        <externalId>false</externalId>
-        <label>Code</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Green</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Yellow</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>RED</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-    </fields>
-    <fields>
         <fullName>Comments__c</fullName>
         <externalId>false</externalId>
         <label>Comments</label>
