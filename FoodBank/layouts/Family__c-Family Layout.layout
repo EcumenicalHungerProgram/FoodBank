@@ -42,10 +42,6 @@
                 <field>HousingType__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Moved__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Map__c</field>
             </layoutItems>

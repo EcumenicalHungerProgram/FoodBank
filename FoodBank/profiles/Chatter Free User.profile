@@ -183,11 +183,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Family__c.Moved__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Family__c.NumPeople__c</field>
         <readable>false</readable>
     </fieldPermissions>
