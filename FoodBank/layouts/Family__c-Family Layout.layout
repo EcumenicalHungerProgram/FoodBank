@@ -184,11 +184,6 @@
     </relatedLists>
     <relatedLists>
         <fields>Self__c</fields>
-        <fields>BestTime__c</fields>
-        <relatedList>Phone__c.Family__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>Self__c</fields>
         <relatedList>Income__c.Family__c</relatedList>
     </relatedLists>
     <relatedLists>
