@@ -155,14 +155,6 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Note__c</fields>
-        <fields>CREATED_DATE</fields>
-        <relatedList>Note__c.Family__c</relatedList>
-        <sortField>CREATED_DATE</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>Gender__c</fields>
         <fields>Relationship__c</fields>
         <fields>Age__c</fields>
