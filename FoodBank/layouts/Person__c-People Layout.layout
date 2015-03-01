@@ -35,6 +35,10 @@
                 <behavior>Edit</behavior>
                 <field>IDVerificationComment__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Ethnicity__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
