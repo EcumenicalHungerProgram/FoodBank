@@ -27,6 +27,18 @@
                 <behavior>Edit</behavior>
                 <field>State__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Phone__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Phone_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Phone_Notes__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -164,11 +176,6 @@
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
-        <fields>Self__c</fields>
-        <fields>BestTime__c</fields>
-        <relatedList>Phone__c.Family__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>NAME</fields>
         <fields>BoxType__c</fields>
         <fields>BoxSize__c</fields>
@@ -178,6 +185,19 @@
         <relatedList>Service__c.Family__c</relatedList>
         <sortField>NAME</sortField>
         <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Note__c</fields>
+        <fields>CREATED_DATE</fields>
+        <relatedList>Note__c.Family__c</relatedList>
+        <sortField>CREATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>Self__c</fields>
+        <fields>BestTime__c</fields>
+        <relatedList>Phone__c.Family__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>Self__c</fields>
