@@ -14,7 +14,7 @@ public class HolidayGiveawayController {
     service = [SELECT id, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c ,DistributionMethod__c,
         TimeSlot__r.DateTime__c,
         Family__r.Name, Family__r.id, Family__r.AddressCombined__c, Family__r.Ethnicity__c, Family__r.SpecialNeeds__c,
-                Family__r.NumPeople__c, Family__r.HolidayComments__c
+                Family__r.NumPeople__c
         FROM Service__c
         WHERE id = :service_id];
     phones = [SELECT Number__c, Type__c, BestTime__c

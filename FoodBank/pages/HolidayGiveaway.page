@@ -91,12 +91,6 @@
 </div>
 
 <apex:pageBlock >
-  <apex:pageBlockSection title="Comments">
-     <apex:outputField value="{!service.Family__r.HolidayComments__c}" label=""/> 
-  </apex:pageBlockSection>
-</apex:pageBlock>
-
-<apex:pageBlock >
   <apex:pageBlockTable value="{!people}" var="p">
     <apex:column value="{!p.FirstName__c}">
       <apex:facet name="header">First name</apex:facet>

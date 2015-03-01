@@ -163,11 +163,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Family__c.HolidayComments__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Family__c.HousingType__c</field>
         <readable>false</readable>
     </fieldPermissions>

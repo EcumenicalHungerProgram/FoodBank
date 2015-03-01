@@ -201,14 +201,6 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>HolidayComments__c</fullName>
-        <externalId>false</externalId>
-        <label>Holiday Comments</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
         <fullName>HousingType__c</fullName>
         <externalId>false</externalId>
         <label>Housing Type</label>
