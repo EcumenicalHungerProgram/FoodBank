@@ -103,60 +103,6 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
         <visibleLines>8</visibleLines>
     </fields>
     <fields>
-        <fullName>Ethnicity__c</fullName>
-        <externalId>false</externalId>
-        <label>Ethnicity</label>
-        <picklist>
-            <picklistValues>
-                <fullName>African</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>African Amer.</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Asian</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Bi-Racial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Caucasian</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hispanic</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Native Amer.</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Nicaraguan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pacific Islander</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Panamanian</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-    </fields>
-    <fields>
         <fullName>Frequency__c</fullName>
         <externalId>false</externalId>
         <label>Frequency</label>
@@ -743,7 +689,6 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
         <columns>NAME</columns>
         <columns>AddressCombined__c</columns>
         <columns>NumPeople__c</columns>
-        <columns>Ethnicity__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -754,7 +699,7 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
     <pluralLabel>Families</pluralLabel>
     <searchLayouts>
         <customTabListAdditionalFields>AddressCombined__c</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Ethnicity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields xsi:nil="true"/>
         <searchResultsAdditionalFields>AddressCombined__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>

@@ -6,7 +6,7 @@ public class MissedAppointmentsController {
   public boolean show_header {get; set;}
   
   public List<Service__c> missed_appointments {get; set;}
-  public Map<Id, String> heads {get; set;}
+  public Map<Id, Person__c> heads {get; set;}
 
   private void getReportData() {
     missed_appointments = [SELECT id, TimeSlot__r.DateTime__c, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c, Family__r.Name, Family__r.id, DistributionMethod__c

@@ -5,7 +5,7 @@ public class DeliveryListController {
   public boolean show_header {get; set;}
   
   public List<Service__c> services {get; set;}
-  public Map<Id, String> heads {get; set;}
+  public Map<Id, Person__c> heads {get; set;}
   public Integer num {get; set;}
 
   private void getReportData() {

@@ -65,10 +65,10 @@
           <apex:outputLink value="/{!service.Family__r.id}">
             [<apex:outputField value="{!service.Family__r.Name}"/>]
           </apex:outputLink>
-          {!head}
+          {!head.FirstName__c} {!head.LastName__c}
         </apex:outputText> <br/>
         <apex:outputField value="{!service.Family__r.AddressCombined__c}" label="Address"/> <br/>
-        <apex:outputField value="{!service.Family__r.Ethnicity__c}" label="Ethnicity"/> <br/>
+        <apex:outputField value="{!head.Ethnicity__c}" label="Ethnicity"/> <br/>
         <apex:outputField value="{!service.Family__r.SpecialNeeds__c}" label="Special Needs"/>
       </apex:pageBlockSection>
     </apex:pageBlock>

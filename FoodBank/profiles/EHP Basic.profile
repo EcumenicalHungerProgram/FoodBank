@@ -108,6 +108,11 @@
     <custom>true</custom>
     <description>The basic EHP user profile. Can&apos;t change/delete all values.</description>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>BirthdayParam__c.Month__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Expense__c.Comment__c</field>
         <readable>false</readable>
@@ -145,11 +150,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Family__c.Comments__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Family__c.Ethnicity__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -656,6 +656,10 @@
     <pageAccesses>
         <apexPage>ServiceHistory</apexPage>
         <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ToyCoupon</apexPage>
+        <enabled>false</enabled>
     </pageAccesses>
     <tabVisibilities>
         <tab>Expense__c</tab>

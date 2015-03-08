@@ -15,8 +15,9 @@
   <apex:pageBlockTable value="{!services}" var="m" rules="all">
     <apex:column >
       <apex:outputLink value="/{!m.Family__r.id}">
-          {!heads[m.Family__r.id]}
+        [<apex:outputField value="{!m.Family__r.Name}"/>]
       </apex:outputLink>
+      {!heads[m.Family__r.id].FirstName__c} {!heads[m.Family__r.id].LastName__c}
       <apex:facet name="header">Name</apex:facet>
     </apex:column>
     <apex:column >

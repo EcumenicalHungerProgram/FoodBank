@@ -40,15 +40,16 @@ public class IncomeEthnicityController {
       updateServiceCount((Integer)ar.get('sc'));
     }
     createServiceCountsOut();
+    Map<Id, Person__c> heads = HeadOfHouseholdFetcher.fetch(family_ids);
 
     num_households = family_ids.size();
     
-    Income__c[] family_incomes = [SELECT Income__c.IncomeSource__c, Income__c.Family__r.Ethnicity__c
+    Income__c[] family_incomes = [SELECT Income__c.IncomeSource__c, Income__c.Family__r.id
       FROM Income__c
       WHERE Family__R.id in :family_ids];
     for (Income__c i : family_incomes) {
       String t = maybe(i.IncomeSource__c);
-      String e = maybe(i.Family__r.Ethnicity__c);
+      String e = maybe(heads.get(i.Family__r.id).Ethnicity__c);
       income_types.add(t);
       ethnicities.add(e);
       updateIncomeEthnicity(t, e);

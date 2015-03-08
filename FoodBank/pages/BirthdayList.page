@@ -1,51 +1,68 @@
-<apex:page controller="BirthdayListController" title="Client Demographics" showHeader="{!show_header}">
+<apex:page controller="BirthdayListController" title="Birthday List" showHeader="{!show_header}">
   <apex:styleSheet value="{!URLFOR($Resource.FoodBank)}"/>
-  
-  <h1>{!month} Birthdays</h1>
+
   <apex:form rendered="{!show_header}">
       <apex:commandLink value="Printable View" action="{!makePrintable}">
           <apex:param name="show_header" value="false" assignTo="{!show_header}"/>
       </apex:commandLink>
   </apex:form>
-
+  
+  
+  <apex:pageBlock >
+    <p>Birthday list for children (age 4-15) of families receiving services during period 
+       &nbsp;<apex:outputText value="{0,date,M'/'d'/'yyyy}">
+       <apex:param value="{!start_date}"/>
+     </apex:outputText>&nbsp;-&nbsp;<apex:outputText value="{0,date,M'/'d'/'yyyy}">
+       <apex:param value="{!end_date}" /> 
+     </apex:outputText>
+     </p>
+  </apex:pageBlock>
+  
   <apex:form >
-      <p>For children (age 4-15) of families receiving services during period 
-      &nbsp;<apex:outputText value="{0,date,M'/'d'/'yyyy}">
-        <apex:param value="{!start_date}"/>
-      </apex:outputText>&nbsp;-&nbsp;<apex:outputText value="{0,date,M'/'d'/'yyyy}">
-        <apex:param value="{!end_date}" /> 
-      </apex:outputText>
-      </p>
-        <apex:pageBlock id="all"  title="Birthdays" >
-            <apex:pageBlockTable value="{!birthdays}" var="c">
-                <apex:column value="{!c.name}">
-                    <apex:facet name="header">Name</apex:facet>
-                </apex:column>
-                <apex:column >
-                    <apex:facet name="header">DOB</apex:facet>
-                    <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
-                        <apex:param value="{!c.dob}" /> 
-                    </apex:outputText>
-                </apex:column>
-                <apex:column value="{!c.age}">
-                    <apex:facet name="header">Age</apex:facet>
-                </apex:column>
-                <apex:column value="{!c.gender}">
-                    <apex:facet name="header">Gender</apex:facet>
-                </apex:column>
-                <apex:column value="{!c.file_no}">
-                    <apex:facet name="header">File #</apex:facet>
-                </apex:column>
-                <apex:column value="{!c.relation}">
-                    <apex:facet name="header">Relation</apex:facet>
-                </apex:column>
-                <apex:column value="{!c.last_service}">
-                    <apex:facet name="header">Last Service</apex:facet>
-                </apex:column>
-                <apex:column value="{!c.phone}" >
-                    <apex:facet name="header">Home Phone</apex:facet>
-                </apex:column>
-            </apex:pageBlockTable>
-        </apex:pageBlock>
-    </apex:form>
+    <apex:pageBlock title="Choose Month">
+      <apex:pageBlockSection columns="1">
+        <apex:inputField value="{!birthday_param.Month__c}" required="True" />
+        <apex:pageBlockSectionItem >
+          <apex:outputLabel value=" " />
+          <apex:commandButton action="{!getReport}" value="Get Birthday List"/>
+        </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+
+  <apex:pageBlock id="all"  title="Birthdays" rendered="{!has_month}">
+    <apex:pageBlockTable value="{!birthdays}" var="c">
+      <apex:column >
+         <apex:outputLink value="/{!c.family_id}">
+            [<apex:outputText value="{!c.family_name}"/>]
+        </apex:outputLink>
+        {!c.name}
+        <apex:facet name="header">Name</apex:facet>
+      </apex:column>
+      <apex:column >
+        <apex:facet name="header">DOB</apex:facet>
+        <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+          <apex:param value="{!c.dob}" /> 
+        </apex:outputText>
+      </apex:column>
+      <apex:column value="{!c.age}">
+        <apex:facet name="header">Age</apex:facet>
+      </apex:column>
+      <apex:column value="{!c.gender}">
+        <apex:facet name="header">Gender</apex:facet>
+      </apex:column>
+      <apex:column value="{!c.file_no}">
+        <apex:facet name="header">File #</apex:facet>
+      </apex:column>
+      <apex:column value="{!c.relation}">
+        <apex:facet name="header">Relation</apex:facet>
+      </apex:column>
+      <apex:column value="{!c.last_service}">
+        <apex:facet name="header">Last Service</apex:facet>
+      </apex:column>
+      <apex:column value="{!c.phone}" >
+        <apex:facet name="header">Home Phone</apex:facet>
+      </apex:column>
+    </apex:pageBlockTable>
+  </apex:pageBlock>
 </apex:page>

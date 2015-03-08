@@ -5,11 +5,11 @@ public class DistributionListController {
   public boolean show_header {get; set;}
   
   public List<Service__c> services {get; set;}
-  public Map<Id, String> heads {get; set;}
+  public Map<Id, Person__c> heads {get; set;}
   public Integer num {get; set;}
 
   private void getReportData() {
-    services = [SELECT id, TimeSlot__r.DateTime__c, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c, Family__r.id, DistributionMethod__c, DateOfService__c
+    services = [SELECT id, TimeSlot__r.DateTime__c, BoxType__c, BoxSize__c, TypeOfMeat__c, Adopted__c, Family__r.id, Family__r.name, DistributionMethod__c, DateOfService__c
         FROM Service__c
         WHERE TimeSlot__r.DateTime__c >= :start_date
             AND TimeSlot__r.DateTime__c < :end_date];

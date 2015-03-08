@@ -108,6 +108,11 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>BirthdayParam__c.Month__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Expense__c.Comment__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -144,11 +149,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Family__c.Comments__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Family__c.Ethnicity__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -645,6 +645,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>ServiceHistory</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ToyCoupon</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <tabVisibilities>

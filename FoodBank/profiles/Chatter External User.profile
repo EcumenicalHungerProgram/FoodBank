@@ -108,6 +108,11 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
+        <field>BirthdayParam__c.Month__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Expense__c.Comment__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -144,11 +149,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Family__c.Comments__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Family__c.Ethnicity__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -555,6 +555,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>ServiceHistory</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ToyCoupon</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <userLicense>Chatter External</userLicense>
