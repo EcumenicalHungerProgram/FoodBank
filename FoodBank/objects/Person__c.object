@@ -335,6 +335,31 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Languages_Spoken__c</fullName>
+        <description>All languages spoken by this person</description>
+        <externalId>false</externalId>
+        <label>Languages Spoken</label>
+        <picklist>
+            <picklistValues>
+                <fullName>English</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tongon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>LastName__c</fullName>
         <externalId>false</externalId>
         <label>Last Name</label>
@@ -344,6 +369,29 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preferred_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Preferred Language</label>
+        <picklist>
+            <picklistValues>
+                <fullName>English</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tongon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Relationship__c</fullName>
