@@ -357,7 +357,7 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
-        <visibleLines>3</visibleLines>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>LastName__c</fullName>
@@ -642,6 +642,7 @@
         <columns>Gender__c</columns>
         <columns>Relationship__c</columns>
         <columns>Disabled__c</columns>
+        <columns>Languages_Spoken__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

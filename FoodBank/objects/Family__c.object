@@ -270,29 +270,6 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Languages__c</fullName>
-        <externalId>false</externalId>
-        <label>Languages</label>
-        <picklist>
-            <picklistValues>
-                <fullName>English</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Spanish</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Tongan</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
         <fullName>Map__c</fullName>
         <description>The map URL</description>
         <externalId>false</externalId>

@@ -169,11 +169,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Family__c.Languages__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Family__c.Map__c</field>
         <readable>true</readable>
     </fieldPermissions>
