@@ -8,7 +8,6 @@
     <tab>Person__c</tab>
     <tab>Income__c</tab>
     <tab>Note__c</tab>
-    <tab>Phone__c</tab>
     <tab>Verification__c</tab>
     <tab>Expense__c</tab>
     <tab>Service__c</tab>

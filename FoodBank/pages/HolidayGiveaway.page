@@ -76,14 +76,14 @@
   <div class="holiday-contact-info">
     <apex:pageBlock >
       <apex:pageBlockTable value="{!phones}" var="p">
-        <apex:column value="{!p.Type__c}">
+        <apex:column value="{!p.type}">
           <apex:facet name="header">Type</apex:facet>
         </apex:column>
-        <apex:column value="{!p.Number__c}">
+        <apex:column value="{!p.phone_number}">
           <apex:facet name="header">Number</apex:facet>
         </apex:column>
-        <apex:column value="{!p.BestTime__c}">
-          <apex:facet name="header">Best time</apex:facet>
+        <apex:column value="{!p.notes}">
+          <apex:facet name="header">Notes</apex:facet>
         </apex:column>
       </apex:pageBlockTable>
     </apex:pageBlock>
