@@ -54,17 +54,18 @@ public class DemographicsController {
         }
         
         num_age_non_youth = num_people - num_age_youth;
-
-        percent_gender_blank = (num_gender_blank * 100) / num_people;
-        percent_gender_female = (num_gender_female * 100) / num_people;
-        percent_gender_male = (num_gender_male * 100) / num_people;
-
-        percent_age_blank = (num_age_blank * 100) / num_people;
-        percent_age_youth = (num_age_youth * 100) / num_people;
-        percent_age_adult = (num_age_adult * 100) / num_people;
-        percent_age_elderly = (num_age_elderly * 100) / num_people;
-
-        percent_age_non_youth = (num_age_non_youth * 100) / num_people;
+        if (num_people != 0) {
+            percent_gender_blank = (num_gender_blank * 100) / num_people;
+            percent_gender_female = (num_gender_female * 100) / num_people;
+            percent_gender_male = (num_gender_male * 100) / num_people;
+    
+            percent_age_blank = (num_age_blank * 100) / num_people;
+            percent_age_youth = (num_age_youth * 100) / num_people;
+            percent_age_adult = (num_age_adult * 100) / num_people;
+            percent_age_elderly = (num_age_elderly * 100) / num_people;
+    
+            percent_age_non_youth = (num_age_non_youth * 100) / num_people;
+        }
     }
     
     public DemographicsController() {

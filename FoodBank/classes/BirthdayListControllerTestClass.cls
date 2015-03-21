@@ -5,6 +5,7 @@ private class BirthdayListControllerTestClass {
         BirthdayListController controller = new BirthdayListController();
         
         controller.makePrintable();
-        System.assertEquals('April', controller.month);
+        controller.birthday_param.Month__c = 'April';
+        controller.getReport();
     }
 }
