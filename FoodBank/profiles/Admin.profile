@@ -521,9 +521,6 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
         <object>BirthdayParam__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
