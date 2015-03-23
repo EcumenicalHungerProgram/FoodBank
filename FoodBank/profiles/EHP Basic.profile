@@ -6,6 +6,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AddressInfoHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BirthdayListController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -43,6 +47,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>DistributionListControllerTestClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FamilyTriggerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -107,6 +115,16 @@
     </classAccesses>
     <custom>true</custom>
     <description>The basic EHP user profile. Can&apos;t change/delete all values.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AddressInfo__c.AddressIDs__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AddressInfo__c.FamiliesAtAddress__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>BirthdayParam__c.Month__c</field>

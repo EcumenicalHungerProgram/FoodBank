@@ -6,6 +6,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AddressInfoHelper</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>BirthdayListController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -43,6 +47,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>DistributionListControllerTestClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FamilyTriggerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -106,6 +114,16 @@
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AddressInfo__c.AddressIDs__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>AddressInfo__c.FamiliesAtAddress__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>BirthdayParam__c.Month__c</field>
