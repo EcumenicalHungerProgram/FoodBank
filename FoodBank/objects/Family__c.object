@@ -85,7 +85,7 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
     <fields>
         <fullName>AptNum__c</fullName>
         <externalId>false</externalId>
-        <label>Apt #</label>
+        <label>Apt. #</label>
         <length>20</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -300,9 +300,9 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
     </fields>
     <fields>
         <fullName>ID__c</fullName>
-        <description>The Family ID</description>
+        <description>The Family&apos;s Case Number</description>
         <externalId>false</externalId>
-        <label>ID</label>
+        <label>Case Number</label>
         <length>12</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -324,7 +324,7 @@ StreetNum__c &amp; &quot; &quot; &amp; StreetName__c &amp; &quot; Apt #&quot; &a
     <fields>
         <fullName>NumPeople__c</fullName>
         <externalId>false</externalId>
-        <label>NumPeople</label>
+        <label># of People</label>
         <summaryForeignKey>Person__c.Family__c</summaryForeignKey>
         <summaryOperation>count</summaryOperation>
         <trackTrending>false</trackTrending>
