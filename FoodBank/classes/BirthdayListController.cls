@@ -7,8 +7,10 @@ public class BirthdayListController {
         public Date       dob {get; set;}
         public Decimal    age {get; set;}
         public String     gender {get; set;}
+        // TODO(rmsu): populate this value
         public String     file_no {get; set;}
         public String     relation {get; set;}
+        // TODO(rmsu): populate this value
         public Date       last_service {get; set;}
         public String     phone {get; set;}
     }

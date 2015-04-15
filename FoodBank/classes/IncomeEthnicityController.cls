@@ -49,7 +49,7 @@ public class IncomeEthnicityController {
       WHERE Family__R.id in :family_ids];
     for (Income__c i : family_incomes) {
       String t = maybe(i.IncomeSource__c);
-      String e = maybe(heads.get(i.Family__r.id).Ethnicity__c);
+      String e = maybe(getEthnicity(heads.get(i.Family__r.id)));
       income_types.add(t);
       ethnicities.add(e);
       updateIncomeEthnicity(t, e);
@@ -164,6 +164,16 @@ public class IncomeEthnicityController {
     List<String> asList = new List<String>(asSet);
     asList.sort();
     return asList;
+  }
+
+  private String getEthnicity(Person__c person) {
+    if (person == null) {
+      return null;
+    }
+    if (person.Hispanic__c) {
+      return 'Hispanic';
+    }
+    return maybe(person.Ethnicity__c);
   }
 
   private void initValues() {

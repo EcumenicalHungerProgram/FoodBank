@@ -1,7 +1,7 @@
 public class HeadOfHouseholdFetcher {
 
   public static Map<Id, Person__c> fetch(Set<Id> family_ids) {
-    List<Person__c> people = [SELECT FirstName__c, LastName__c, Relationship__c, Person__c.Family__r.id, Ethnicity__c
+    List<Person__c> people = [SELECT FirstName__c, LastName__c, Relationship__c, Person__c.Family__r.id, Ethnicity__c,  Hispanic__c
         FROM Person__c
         WHERE Person__c.Family__r.id in :family_ids];
     Map<Id, Person__c> heads = new Map<Id, Person__c>();

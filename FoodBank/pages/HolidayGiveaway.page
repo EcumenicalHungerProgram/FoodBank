@@ -68,7 +68,8 @@
           {!head.FirstName__c} {!head.LastName__c}
         </apex:outputText> <br/>
         <apex:outputField value="{!service.Family__r.AddressCombined__c}" label="Address"/> <br/>
-        <apex:outputField value="{!head.Ethnicity__c}" label="Ethnicity"/> <br/>
+        <apex:outputField value="{!head.Hispanic__c}" label="Hispanic"/> <br/>
+        <apex:outputField value="{!head.Ethnicity__c}" label="Race"/> <br/>
         <apex:outputField value="{!service.Family__r.SpecialNeeds__c}" label="Special Needs"/>
       </apex:pageBlockSection>
     </apex:pageBlock>
