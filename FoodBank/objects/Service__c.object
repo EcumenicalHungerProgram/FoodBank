@@ -89,8 +89,7 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Medium</fullName>
-                <controllingFieldValues>Food</controllingFieldValues>
+                <fullName>M</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -225,28 +224,6 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
-        <fullName>Order__c</fullName>
-        <externalId>false</externalId>
-        <label>Order #</label>
-        <precision>10</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>ServiceID__c</fullName>
-        <externalId>false</externalId>
-        <label>Service ID</label>
-        <precision>10</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>TimeSlot__c</fullName>
@@ -473,6 +450,14 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
     </fields>
+    <fields>
+        <fullName>USDA__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>USDA</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <label>Service</label>
     <listViews>
         <fullName>All</fullName>
@@ -504,4 +489,12 @@
         <lookupDialogsAdditionalFields>DateOfService__c</lookupDialogsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>requiredIfFood</fullName>
+        <active>false</active>
+        <description>Box Size is required if type is food.</description>
+        <errorConditionFormula>IF(TEXT(Type__c)==&quot;Food&quot;, ISBLANK(TEXT(BoxSize__c)), False)</errorConditionFormula>
+        <errorDisplayField>BoxSize__c</errorDisplayField>
+        <errorMessage>Service type is food so box size is required.</errorMessage>
+    </validationRules>
 </CustomObject>

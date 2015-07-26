@@ -94,7 +94,7 @@
         <fullName>TypeDoc__c</fullName>
         <description>Type of document used to verify the item type specified in &quot;Verif For&quot;.</description>
         <externalId>false</externalId>
-        <label>TypeDoc</label>
+        <label>Type</label>
         <picklist>
             <picklistValues>
                 <fullName>All verified</fullName>
@@ -288,7 +288,7 @@
     <fields>
         <fullName>VerifFor__c</fullName>
         <externalId>false</externalId>
-        <label>Verif For</label>
+        <label>Verifying</label>
         <picklist>
             <picklistValues>
                 <fullName>Custody</fullName>
